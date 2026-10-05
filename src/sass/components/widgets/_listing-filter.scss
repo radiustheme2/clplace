@@ -319,3 +319,97 @@
 		}
 	}
 }
+
+/* = Sidebar Ajax filter widget =
+ * CL renders the widget as its own card with inner padding, so drop the
+ * widget-area padding and reset the older theme overrides above for it. */
+.clplace-widget-area .rtcl-widget-ajax-filter-class {
+	padding: 0;
+	@media (min-width: 768px) {
+		overflow: hidden;
+		border-radius: 12px;
+		border: 1px solid #e7e6e2;
+	}
+	.rtcl-ajax-filter-wrap {
+		padding: 0;
+		box-shadow: none;
+		.rtcl-ajax-filter-item {
+			margin: 0;
+			padding: 0 0 8px;
+			border-bottom: 1px solid #f0efeb;
+			&:last-child {
+				border-bottom: 0;
+			}
+			.rtcl-ajax-filter-data {
+				grid-gap: 4px;
+			}
+			.rtcl-filter-checkbox-item label:before {
+				padding: 0;
+				width: 18px;
+				height: 18px;
+				margin: 0 12px 0 0;
+				border-radius: 5px;
+				border: 1.5px solid #c9c8c2;
+			}
+			.rtcl-filter-checkbox-item label:after {
+				top: 50%;
+				left: 7px;
+				width: 5px;
+				height: 10px;
+				margin-top: -6px;
+			}
+		}
+		.rtcl-ajax-filter-text {
+			&:before {
+				content: none;
+			}
+			input {
+				height: 46px;
+				padding: 0 40px 0 14px;
+			}
+		}
+	}
+	.rtcl-ajax-filter-item {
+		.rtcl-filter-title-wrap {
+			display: flex;
+			margin: 0;
+			padding: 20px 24px 12px;
+			.rtcl-filter-title {
+				font-size: 16px;
+			}
+			.rtcl-icon {
+				flex: none;
+				width: 28px;
+				height: 28px;
+				border: 0;
+				font-size: 18px;
+				border-radius: 50%;
+				align-items: center;
+				display: inline-flex;
+				justify-content: center;
+				background-color: #f4f4f2;
+				color: #5f6168 !important;
+				@include transition_default();
+			}
+			&:hover .rtcl-icon {
+				background-color: $primary_color;
+				color: $white_color !important;
+			}
+		}
+		.rtcl-filter-content {
+			margin: 0;
+			padding: 0 24px 12px;
+		}
+		.rtcl-ajax-filter-text.rtcl-ajax-filter-text-search .rtcl-ajax-filter-search-icon {
+			display: inline-flex;
+		}
+		.rtcl-price-range-wrap .rtcl-range-slider-input-wrap {
+			grid-gap: 10px;
+		}
+		.rtcl-range-slider-input-wrap input {
+			min-width: 0;
+			height: 46px;
+			padding: 0 14px;
+		}
+	}
+}

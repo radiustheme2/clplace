@@ -118,29 +118,47 @@
 			}
 			/* = Informations = */
 			.info-list {
-				row-gap: 6px;
+				row-gap: 12px;
 				margin: 0;
 				padding: 0;
-				margin-top: 10px;
+				margin-top: 16px;
 				display: flex;
 				list-style: none;
 				flex-flow: column;
 			}
 			.info-list li {
-				gap: 7px;
+				gap: 12px;
 				display: flex;
+				font-size: 15px;
+				line-height: 1.5;
+				align-items: flex-start;
+				word-break: break-word;
 			}
 			.info-list li .icon {
-				width: 20px;
-				justify-content: flex-start;
+				flex: none;
+				width: 32px;
+				height: 32px;
+				margin-top: -4px;
+				border-radius: 50%;
+				color: $primary_color;
+				background-color: #eef3ff;
+				svg {
+					display: block;
+					fill: none;
+				}
+				svg path,
+				svg rect,
+				svg circle {
+					fill: none;
+					color: inherit;
+				}
 			}
-			.info-list li svg path,
 			.info-list li i {
 				color: #515167;
 			}
 			.info-list li a,
 			.info-list li {
-				color: $body_color;
+				color: #4a4c52;
 			}
 			.info-list li a:hover {
 				color: $primary_color;

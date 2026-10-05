@@ -36,6 +36,7 @@ class Listing_Functions {
 		add_filter( 'rtcl_get_icon_class_list', [ $this, 'rtcl_get_icon_list_modify' ] );
 		add_action('admin_menu', [$this, 'remove_menus'], 99 );
 		add_action('init', [$this, 'remove_custom_post_type'] );
+        add_filter( 'rtcl_force_classic_style', '__return_true' );
 
         /* = Remove Action */
 		remove_action( 'rtcl_single_listing_inner_sidebar', [ ActionHooks::class, 'add_buy_button' ], 5 );

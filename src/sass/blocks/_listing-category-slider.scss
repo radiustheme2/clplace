@@ -149,3 +149,41 @@
 		}
 	}
 }
+
+/*---------- CL Category Box 1 (Slider) ----------*/
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 {
+	.cat-item-wrap {
+		.cat-details {
+			.icon a {
+				transition: all 0.3s ease-out;
+				box-shadow: 0 8px 20px rgba(45, 104, 255, 0.08);
+			}
+			.views .view-inner {
+				transition: all 0.3s ease-out;
+			}
+		}
+		&:hover {
+			.cat-details {
+				// Tint on top of the Elementor hover colour so the circle stays visible.
+				.icon a {
+					background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.14));
+					box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22), 0 10px 24px rgba(0, 0, 0, 0.08);
+				}
+				// CL sets a solid white badge; with white hover text it became invisible.
+				.views .view-inner {
+					color: inherit;
+					background: transparent;
+					&:before {
+						opacity: 0.15;
+					}
+					&:after {
+						opacity: 0.35;
+					}
+					.dot {
+						background: currentColor;
+					}
+				}
+			}
+		}
+	}
+}

@@ -6638,6 +6638,98 @@ ul.elementor-icon-list-items {
   border-bottom: none;
 }
 
+/* = Sidebar Ajax filter widget =
+ * CL renders the widget as its own card with inner padding, so drop the
+ * widget-area padding and reset the older theme overrides above for it. */
+.clplace-widget-area .rtcl-widget-ajax-filter-class {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .clplace-widget-area .rtcl-widget-ajax-filter-class {
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #e7e6e2;
+  }
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap {
+  padding: 0;
+  box-shadow: none;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-item {
+  margin: 0;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #f0efeb;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-item:last-child {
+  border-bottom: 0;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-item .rtcl-ajax-filter-data {
+  grid-gap: 4px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-item .rtcl-filter-checkbox-item label:before {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 12px;
+  border-radius: 5px;
+  border: 1.5px solid #c9c8c2;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-item .rtcl-filter-checkbox-item label:after {
+  top: 50%;
+  right: 7px;
+  width: 5px;
+  height: 10px;
+  margin-top: -6px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-text:before {
+  content: none;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-wrap .rtcl-ajax-filter-text input {
+  height: 46px;
+  padding: 0 14px 0 40px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-filter-title-wrap {
+  display: flex;
+  margin: 0;
+  padding: 20px 24px 12px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-filter-title-wrap .rtcl-filter-title {
+  font-size: 16px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-filter-title-wrap .rtcl-icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 50%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  background-color: #f4f4f2;
+  color: #5f6168 !important;
+  transition: all 320ms ease;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-filter-title-wrap:hover .rtcl-icon {
+  background-color: var(--rt-primary-color);
+  color: #FFFFFF !important;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-filter-content {
+  margin: 0;
+  padding: 0 24px 12px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-ajax-filter-text.rtcl-ajax-filter-text-search .rtcl-ajax-filter-search-icon {
+  display: inline-flex;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-price-range-wrap .rtcl-range-slider-input-wrap {
+  grid-gap: 10px;
+}
+.clplace-widget-area .rtcl-widget-ajax-filter-class .rtcl-ajax-filter-item .rtcl-range-slider-input-wrap input {
+  min-width: 0;
+  height: 46px;
+  padding: 0 14px;
+}
+
 /*---------- Recent Posts ----------*/
 /*------------------- 5.1 Advanced Search -------------------*/
 .advance-search-form {
@@ -12809,6 +12901,32 @@ xpush
   bottom: -100%;
 }
 
+/*---------- CL Category Box 1 (Slider) ----------*/
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap .cat-details .icon a {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 8px 20px rgba(45, 104, 255, 0.08);
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap .cat-details .views .view-inner {
+  transition: all 0.3s ease-out;
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap:hover .cat-details .icon a {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.14));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22), 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap:hover .cat-details .views .view-inner {
+  color: inherit;
+  background: transparent;
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap:hover .cat-details .views .view-inner:before {
+  opacity: 0.15;
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap:hover .cat-details .views .view-inner:after {
+  opacity: 0.35;
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap:hover .cat-details .views .view-inner .dot {
+  background: currentColor;
+}
+
 /*---------- Listing Location Slider ----------*/
 .rt-listing-locations-slider-wrapper {
   overflow: hidden;
@@ -13808,12 +13926,15 @@ xpush
           appearance: none;
 }
 .rtcl .rtcl-listings-actions .rtcl-ordering:after {
-  top: 12px;
+  top: 50%;
   left: 10px;
+  line-height: 1;
   font-size: 22px;
   content: "\f107";
   position: absolute;
   font-family: fontello;
+  pointer-events: none;
+  transform: translateY(-50%);
 }
 .rtcl .rtcl-listings-actions .rtcl-view-switcher {
   gap: 7px;
@@ -15091,29 +15212,47 @@ xpush
   background-color: #c6ffce;
 }
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list {
-  row-gap: 6px;
+  row-gap: 12px;
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 16px;
   display: flex;
   list-style: none;
   flex-flow: column;
 }
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li {
-  gap: 7px;
+  gap: 12px;
   display: flex;
+  font-size: 15px;
+  line-height: 1.5;
+  align-items: flex-start;
+  word-break: break-word;
 }
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li .icon {
-  width: 20px;
-  justify-content: flex-start;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  margin-top: -4px;
+  border-radius: 50%;
+  color: var(--rt-primary-color);
+  background-color: #eef3ff;
 }
-.rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li svg path,
+.rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li .icon svg {
+  display: block;
+  fill: none;
+}
+.rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li .icon svg path,
+.rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li .icon svg rect,
+.rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li .icon svg circle {
+  fill: none;
+  color: inherit;
+}
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li i {
   color: #515167;
 }
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li a,
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li {
-  color: var(--rt-body-color);
+  color: #4a4c52;
 }
 .rtcl .listing-sidebar .rtcl-listing-user-info .list-group .info-list li a:hover {
   color: var(--rt-primary-color);

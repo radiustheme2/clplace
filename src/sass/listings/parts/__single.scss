@@ -199,6 +199,12 @@
 
 	.rtcl-cfp-item.rtcl-cfp-checkbox {
 		display: block;
+		padding: 0;
+		// The section box already has its own divider.
+		&,
+		&:last-child {
+			border-bottom: 0;
+		}
 		.rtcl-cfp-vi {
 			gap: 10px;
 			justify-content: flex-start;

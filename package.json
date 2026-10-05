@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"prettier": "@wordpress/prettier-config",
 	"scripts": {
+		"postinstall": "node scripts/patch-yargs.js && node scripts/patch-webpackbar.js && node scripts/patch-laravel-mix.js",
 		"dev": "npm run development",
 		"development": "mix",
 		"watch": "mix watch",

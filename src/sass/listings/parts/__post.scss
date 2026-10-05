@@ -198,12 +198,15 @@
 			appearance: none;
 		}
 		&:after {
-			top: 12px;
+			top: 50%;
 			right: 10px;
+			line-height: 1;
 			font-size: 22px;
 			content: "\f107";
 			position: absolute;
 			font-family: fontello;
+			pointer-events: none;
+			transform: translateY(-50%);
 		}
 	}
 

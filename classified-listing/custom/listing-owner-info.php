@@ -84,14 +84,14 @@ if ( Fns::is_online( $listing->get_owner_id() ) ){
                 <?php if ( $owmerAddress ){ ?>
                     <li>
                         <div class="icon d-flex justify-content-center align-items-center">
-                            <i class="icon-location"></i>
+                            <?php echo clplace_html( clplace_get_svg( 'map-pin-line' ), false ); ?>
                         </div>
                         <?php echo esc_html( $owmerAddress ); ?>
                     </li>
                 <?php } if ( $ownerEmail && Functions::check_visibility( $listing->get_author_id(), 'email' ) ){ ?>
                     <li>
                         <div class="icon d-flex justify-content-center align-items-center">
-                            <i class="icon-massage-1"></i>
+                            <?php echo clplace_html( clplace_get_svg( 'mail-line' ), false ); ?>
                         </div>
                         <a class="rtcl-phone-link" href="mailto:<?php echo esc_attr( $ownerEmail ); ?>" target="_blank">
                             <?php echo esc_html( $ownerEmail ); ?>
@@ -100,7 +100,7 @@ if ( Fns::is_online( $listing->get_owner_id() ) ){
                 <?php } if ( $website ){ ?>
                     <li>
                         <div class="icon d-flex justify-content-center align-items-center">
-                            <i class="icon-web"></i>
+                            <?php echo clplace_html( clplace_get_svg( 'globe-line' ), false ); ?>
                         </div>
                         <a class="rtcl-website-link" href="<?php echo esc_url( $website ); ?>" target="_blank"
                             <?php echo Functions::is_external( $website ) ? ' rel="nofollow"' : ''; ?>>
