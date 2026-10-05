@@ -1,0 +1,24 @@
+@each $colour, $hex in $colors {
+	.text-#{$colour} {
+		color: $hex;
+	}
+
+	.bg-#{$colour} {
+		background-color: $hex;
+	}
+
+	.border-#{$colour} {
+		border-color: $hex;
+	}
+}
+
+// Customize text selection
+::selection {
+	background: $primary_color;
+	color: $white_color;
+}
+
+::-moz-selection {
+	background: $primary_color;
+	color: $white_color;
+}

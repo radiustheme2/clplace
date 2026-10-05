@@ -1,0 +1,63 @@
+/*---------- Meta Above Title ----------*/
+
+.separate-meta {
+	margin-bottom: 5px;
+
+	a {
+		font-style: normal;
+		font-weight: 500;
+		background: $meta_light;
+		@extend .primaryColor;
+		font-size: 14px;
+		min-height: 30px;
+		padding: 0 10px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin: 0 4px 4px 0;
+
+		&:hover {
+			background: $primary_color;
+			color: $white_color;
+		}
+	}
+
+	.sp {
+		display: none;
+	}
+
+	.above-meta-style-border & {
+		a {
+			height: 100%;
+			border: 1px solid $primary_color;
+			padding: 4px 10px;
+			line-height: 1.2;
+			background: $white_color;
+			@extend .primaryColor;
+			&:hover {
+				@extend .primaryBG;
+				@extend .whiteColor;
+			}
+		}
+	}
+
+	.meta-style-dash & a {
+		&::before {
+			@extend .primaryColor;
+			@extend .metaStyleDash;
+		}
+
+		&:hover::before {
+			color: $white_color;
+		}
+	}
+
+	.above-meta-style-dash & {
+		a {
+			&::before {
+				@extend .metaStyleDash;
+			}
+		}
+	}
+}

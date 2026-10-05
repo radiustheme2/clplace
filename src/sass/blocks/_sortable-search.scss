@@ -1,0 +1,172 @@
+/*---------- Listing Sortable Search ----------*/
+.rtcl-widget-search-sortable input[type=text]::placeholder {
+	font-size: 15px;
+}
+.rtcl-widget-search-sortable {
+	.form-group:not(.ws-button) {
+		padding: 2px 10px;
+		border-radius: 5px;
+		position: relative;
+		background-color: $white_color;
+	}
+	input[type=password],
+	input[type=number],
+	input[type=text],
+	select {
+		border: none;
+		color: #8C8C8C;
+		background-color: transparent;
+	}
+}
+@media (max-width: #{$sm}) {
+	.rtcl-widget-search-sortable {
+		.rtcl-widget-search-sortable-wrapper {
+			flex-flow: column;
+			align-items: center;
+		}
+	}
+
+	.rtcl-widget-search-sortable-inline .form-group.ws-button,
+	.rtcl-widget-search-sortable-inline .price-field {
+		margin-top: 30px;
+	}
+}
+.ws-category,
+.ws-location,
+.ws-type {
+	.rtcl-search-type,
+	.rtcl-terms {
+		//position: relative;
+		select {
+			padding-left: 22px !important;
+		}
+		&:before {
+			top: 50%;
+			left: 10px;
+			content: '';
+			color: #8C8C8C;
+			font-size: 19px;
+			position: absolute;
+			font-family: fontello;
+			transform: translateY(-50%);
+		}
+		&:after {
+			top: 15px;
+			right: 10px;
+			content: '\f107';
+			font-size: 20px;
+			position: absolute;
+			font-family: fontello;
+		}
+		select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+	}
+}
+
+.ws-location {
+	.rtcl-terms {
+		&:before {
+			content: '\e82d';
+		}
+	}
+}
+
+.ws-category {
+	.rtcl-terms {
+		&:before {
+			font-size: 15px;
+			content: '\e802';
+		}
+	}
+}
+
+.ws-type {
+	.rtcl-search-type {
+		&:before {
+			font-size: 16px;
+			content: '\e842';
+		}
+	}
+}
+
+//.home-3-search-banner {
+//	&.clplace-btn {
+//		display: unset;
+//	}
+//
+//	.rtcl-widget-search-sortable :is(select:focus, input:focus, .rtcl-search-input-button:focus) {
+//		border-color: #ffffff !important;
+//	}
+//}
+
+//
+//.home-4-search-banner {
+//	.rtcl-flex {
+//		display: unset;
+//	}
+//	.rt-autocomplete-wrapper {
+//		width: 100%;
+//		display: inline-block;
+//	}
+//	.ws-category .rtcl-terms:before,
+//	.ws-location .rtcl-terms:before {
+//		display: none;
+//	}
+//	.form-group.ws-item.ws-location,
+//	.form-group.ws-item.ws-category {
+//		width: 48%;
+//		display: inline-flex;
+//		margin-top: 15px;
+//		@media (max-width: #{$sm}) {
+//			width: 100%;
+//		}
+//	}
+//	.form-group.ws-item.ws-location {
+//		margin-right: 1.4%;
+//		@media (max-width: #{$sm}) {
+//			margin-right: 0;
+//		}
+//	}
+//	.form-group.ws-item.ws-category {
+//		margin-left: 1.4%;
+//		@media (max-width: #{$sm}) {
+//			margin-left: 0;
+//		}
+//	}
+//	.form-group.ws-item.ws-button button {
+//		width: 100%;
+//	}
+//	.keywords-field-wrapper {
+//		position: relative;
+//	}
+//	.rtcl-icon-spinner.animate-spin {
+//		top: 15px;
+//		right: 15px;
+//		position: absolute;
+//	}
+//	.ws-category .rtcl-search-type select,
+//	.ws-category .rtcl-terms select,
+//	.ws-location .rtcl-search-type select,
+//	.ws-location .rtcl-terms select,
+//	.ws-type .rtcl-search-type select,
+//	.ws-type .rtcl-terms select {
+//		padding-left: 15px !important;
+//	}
+//	.ws-category .rtcl-terms:after,
+//	.ws-location .rtcl-terms:after {
+//		top: 50%;
+//	}
+//}
+
+.rtcl-widget-search-sortable :is(select:focus, input:focus, .rtcl-search-input-button:focus ) {
+	border-color: $black_color !important;
+}
+
+.rtcl-widget-search-sortable input[type=text]::placeholder {
+	color: #8D8D8D;
+}
+
+

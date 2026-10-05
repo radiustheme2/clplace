@@ -1,0 +1,12 @@
+/*---------- Listing Search Widget ----------*/
+
+.rtcl-widget-search-form {
+	.ws-item {
+		position: relative;
+		.rtcl-icon-spinner {
+			top: 8px;
+			right: 25px;
+			position: absolute;
+		}
+	}
+}

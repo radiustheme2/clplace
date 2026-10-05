@@ -1,0 +1,290 @@
+/*---------- Listing Gallery ----------*/
+
+.author-banner {
+	.breadcrumb-content {
+		gap: 30px;
+		display: flex;
+		flex-flow: unset;
+		align-items: center;
+		justify-content: space-between;
+		@media screen and (max-width: 991px){
+			flex-flow: column;
+			align-items: start;
+		}
+		.listing-author {
+			gap: 25px;
+			display: flex;
+			@media screen and (max-width: 767px){
+				gap: 10px;
+				flex-flow: column;
+			}
+			.author-logo-wrapper {
+				width: 140px;
+				position: relative;
+			}
+			.author-logo-wrapper img {
+				border-radius: 100%;
+			}
+			.author-logo-wrapper .rtcl-user-status {
+				top: 14px;
+				right: 13px;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				border-radius: 100%;
+				background-color: gray;
+				&.online {
+					background-color: forestgreen;
+				}
+			}
+			.author-info-wrapper .author-name {
+				margin-bottom: 5px;
+			}
+			.author-info-wrapper .phone-whatsapp {
+				gap: 10px;
+				display: flex;
+				margin-top: 25px;
+				flex-wrap: wrap;
+			}
+			.author-info-wrapper .phone-whatsapp .item-number {
+				margin: 0;
+			}
+			.author-info-wrapper .phone-whatsapp .item-number .number-icon {
+				font-size: 20px;
+				@media screen and (max-width: 1200px){
+					font-size: 16px;
+					i {
+						display: none;
+					}
+				}
+			}
+			.author-info-wrapper .phone-whatsapp .item-number .text-muted {
+				margin-left: 10px;
+			}
+		}
+		.rtcl-user-social {
+			column-gap: 10px;
+			display: inline-flex;
+			justify-content: flex-end;
+			@media screen and (max-width: 991px){
+				margin-left: 165px;
+			}
+			@media screen and (max-width: 767px){
+				margin-left: 0;
+				margin-top: 0;
+			}
+		}
+		&:after {
+			right: 300px;
+			bottom: 80px;
+			position: absolute;
+			content: url("../images/profile-bg-line-shape.svg");
+		}
+	}
+	background-image: url("../images/profile-bg-shape.svg");
+	background-repeat: no-repeat;
+	background-position: 0 70%;
+}
+
+.author-listing-page {
+	padding-top: 0;
+	padding-bottom: 90px;
+	.rtcl .rtcl-grid-view {
+		display: grid;
+		grid-row-gap: 30px;
+		grid-column-gap: 30px;
+		grid-template-columns: repeat(3, 1fr);
+		@media screen and (max-width: 1200px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media screen and (max-width: 767px){
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.rtcl-user-ad-listing-wrapper {
+		span.rtcl-icon-spinner {
+			left: 50%;
+			margin-left: -10px;
+			position: relative;
+		}
+	}
+}
+
+.rtcl-user-single-wrapper {
+	display: flex;
+	.rtcl-user-ad-listing-wrapper {
+		margin-top: 30px;
+	}
+	.rtcl-user-info-wrap {
+		.rtcl-user-info {
+			flex: unset;
+			max-width: 100%;
+		}
+	}
+	.rtcl-user-listing-list {
+		flex: 1;
+		.rtcl-list-view .listing-item {
+			border: 1px solid rgba(0, 0, 0, .05);
+		}
+	}
+}
+
+.rtcl .rtcl-grid-view .listing-item.is-featured {
+	border: none;
+}
+
+/* = Author Banner Style 2 = */
+.author-banner-info {
+	width: 100%;
+	flex-flow: column;
+	margin-top: -100px;
+	position: relative;
+	align-items: center;
+	margin-bottom: 30px;
+	display: inline-flex;
+	justify-content: center;
+	.author-logo-wrapper {
+		width: 200px;
+		height: 200px;
+		padding: 10px;
+		border-radius: 100%;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		background-color: #FFFFFF;
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 100%;
+		}
+	}
+	.author-name {
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+}
+
+.author-info {
+	padding: 30px;
+	border-radius: 10px;
+	background-color: $white_color;
+	h3 {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #d9d9d9;
+	}
+
+	@media screen and (max-width: 991px){
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+}
+
+.author-general-info {
+	border-radius: 10px;
+	background: $white_color;
+	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.06);
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.06);
+	padding-bottom: 20px;
+	.title {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 29px;
+		padding: 20px 30px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #D9D9D9;
+	}
+
+	.author-info-item {
+		gap: 5px;
+		color: #8D8D8D;
+		padding: 7px 30px;
+		display: inline-flex;
+		align-items: center;
+		a {
+			color: #8D8D8D;
+			&:hover {
+				color: $primary_color;
+			}
+		}
+		i {
+			width: 25px;
+			&.icon-location-3 {
+				font-size: 24px;
+			}
+			&.icon-phon-call-2 {
+				font-size: 20px;
+			}
+			&.fa-whatsapp {
+				font-size: 22px;
+			}
+			&.icon-web {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+/* = Chat & Messaging = */
+.rtcl-do-email.list-group-item {
+	padding: 25px;
+	position: relative;
+	border-radius: 10px;
+	background-color: $white_color;
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.01);
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.01);
+	@media screen and (max-width: 991px){
+		margin-top: 50px;
+	}
+	.rtcl-do-email-link {
+		color: $title_color;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: normal;
+		display: inline-flex;
+	}
+}
+
+.rtcl-do-email form {
+	display: flex;
+	flex-flow: column;
+}
+
+.rtcl-do-email form input[type="text"],
+.rtcl-do-email form input[type="email"],
+.rtcl-do-email form input[type="url"],
+.rtcl-do-email form input[type="password"],
+.rtcl-do-email form input[type="search"],
+.rtcl-do-email form input[type="number"],
+.rtcl-do-email form input[type="tel"],
+.rtcl-do-email form input[type="range"],
+.rtcl-do-email form textarea {
+	width: 100%;
+	color: #bbbbbb;
+	height: 50px;
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+.rtcl-do-email form textarea {
+	height: 120px;
+}
+
+.rtcl-do-email form button.btn.btn-primary {
+	width: 100%;
+	padding: 18px 20px;
+	text-transform: uppercase;
+	background-color: $primary_color;
+	&:hover {
+		color: $primary_color;
+		background-color: transparent;
+	}
+}
+.rtcl-listing-user-info,
+.author-general-info {
+	.fa-x-twitter:before {
+		content: "\e61b" !important;
+	}
+}

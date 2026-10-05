@@ -1,0 +1,66 @@
+/*---------- RT Paralax ----------*/
+.rt-animated-img {
+	position: absolute;
+	height: auto;
+	width: auto !important;
+}
+
+.elementor-custom-embed-play i {
+	opacity: 1;
+	text-shadow: 0 27px 57px rgb(0 0 0 / 41%);
+	transition: 0.1s linear;
+}
+
+.elementor-custom-embed-play i.eicon-play-o::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	background-color: var(--rt-primary-color);
+	border-radius: 50%;
+	z-index: -1;
+	transform: translate(-50%, -50%);
+	transition: 0.4s;
+}
+
+.elementor-widget.rt-parallax-follow-main-wrapper {
+	position: static;
+}
+
+.left-to-right {
+	animation: rtLeftRight ease-in-out forwards infinite;
+	animation-duration: 15s;
+}
+
+.top-to-bottom {
+	animation: rtTopBottom ease-in-out forwards infinite;
+	animation-duration: 15s;
+}
+
+@keyframes rtLeftRight {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(80px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes rtTopBottom {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(80px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/*End Video Block*/

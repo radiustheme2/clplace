@@ -1,0 +1,140 @@
+/*---------- Listing Showcase 7 ----------*/
+.rtcl-style-7-view {
+	.item-img {
+		.rt-categories {
+			margin-bottom: 5px;
+		}
+		.rt-categories a {
+			gap: 3px;
+			padding: 0 8px 0 8px;
+			border-radius: 5px;
+			display: inline-flex;
+			color: $white_color;
+			font-size: 14px;
+			background-color: $primary_color;
+			border: 1px solid $primary_color;
+			&:hover {
+				color: $black_color;
+				border-color: $white_color;
+				background-color: $white_color;
+			}
+		}
+		.rtcl-listing-badge-wrap {
+			flex-flow: column;
+			span.badge {
+				font-size: 14px;
+				line-height: 1.4;
+				display: inline-flex;
+				padding: 3px 8px 3px 8px;
+				@include transition_default();
+				&:hover {
+					cursor: pointer;
+					color: $black_color !important;
+					background-color: $white_color !important;
+				}
+			}
+		}
+	}
+	.listing-item .item-content {
+		padding: 15px 0 20px 0 !important;
+	}
+	.item-content {
+		.title-excerpt-box {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		.all-meta-info-box {
+			width: 100%;
+			flex-wrap: wrap;
+			margin-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			align-items: center;
+			display: inline-flex;
+			justify-content: space-between;
+			i {
+				color: $primary_color;
+			}
+			.phone-number {
+				gap: 5px;
+				font-weight: 600;
+				display: inline-flex;
+			}
+			.rtcl-listing-meta-data {
+				gap: 15px;
+				margin: 0;
+				font-size: 1rem;
+				display: inline-flex;
+				i {
+					font-size: 20px;
+					color: $primary_color;
+				}
+			}
+			.rtcl-listing-meta-data li {
+				margin: 0;
+				color: $meta_color;
+			}
+			a {
+				color: $meta_color;
+			}
+			a:hover {
+				color: $primary_color;
+			}
+		}
+		.listing-footer {
+			margin-top: 20px;
+			padding-top: 20px;
+			padding-left: 25px;
+			padding-right: 25px;
+			.rtcl-price {
+				padding: 3px 5px;
+				border-radius: 3px;
+				border: 1px solid #D9D9D9;
+			}
+			.product-rating {
+				gap: 3px;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.listing-actions-buttons {
+	top: 15px;
+	left: 15px;
+	z-index: 1;
+	position: absolute;
+}
+
+.rtcl .rtcl-Reviews.rtcl #comments ol.comment-list li .comment-container .media-info {
+	display: flex;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.rtcl .rtcl-Reviews.rtcl #comments ol.comment-list li .comment-container .media-info .user-avatar {
+	flex: 0 0 80px;
+	img {
+		width: 100%;
+	}
+}
+.rtcl .rtcl-Reviews.rtcl #comments ol.comment-list li .comment-container .media-info .rtcl-review-meta {
+	flex: 1;
+	.media-author {
+		position: relative;
+		.rtcl-review-published-date {
+			top: 0;
+			right: 0;
+			position: absolute;
+		}
+	}
+	.comment-body {
+		margin-top: 15px;
+	}
+}
+.rtcl .rtcl-Reviews.rtcl #comments .rtcl-reviews-meta .listing-meta {
+	margin-left: 0;
+	margin-bottom: 15px;
+}
+

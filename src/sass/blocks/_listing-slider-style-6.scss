@@ -1,0 +1,36 @@
+/*---------- Listing Slider 6 ----------*/
+.rtcl-el-slider-wrapper {
+	.rtcl-slider-btn {
+		top: 50%;
+		left: auto;
+		z-index: 1;
+		width: 60px;
+		right: -35px;
+		height: 60px;
+		padding-right: 3px;
+		color: $title_color;
+		transform: translateY(-50%);
+		background-color: $primary_color;
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+		&.button-left {
+			left: -35px;
+		}
+	}
+	.rtcl-icon-angle-left:before {
+		content: "\e81e";
+		font-size: 16px;
+		font-family: fontello;
+		transform: rotate(180deg);
+	}
+	.rtcl-icon-angle-right:before {
+		content: "\e81e";
+		font-size: 16px;
+		font-family: fontello;
+	}
+}
+
+.recomanded-slider {
+	.rtcl-el-slider-wrapper.rtcl-listings-slider {
+		padding-top: 125px;
+	}
+}

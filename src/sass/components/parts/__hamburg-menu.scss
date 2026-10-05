@@ -1,0 +1,53 @@
+/*---------- Hamburg Menu ----------*/
+.ham_burger {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	.is-open & {
+		transform: rotate(45deg);
+	}
+
+	.is-open & .top {
+		stroke-dashoffset: -64px;
+	}
+
+	.is-open & .middle {
+		transform: rotate(90deg);
+	}
+
+	.is-open & .bottom {
+		stroke-dashoffset: -64px;
+	}
+
+	.line {
+		fill: none;
+		transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+		stroke: $meta_color;
+		stroke-width: 4;
+		stroke-linecap: round;
+	}
+
+	.top {
+		stroke-dasharray: 40 160;
+	}
+
+	.middle {
+		stroke-dasharray: 40 142;
+		transform-origin: 50%;
+		transition: transform 400ms;
+	}
+
+	.bottom {
+		stroke-dasharray: 40 85;
+		transform-origin: 50%;
+		transition: transform 400ms, stroke-dashoffset 400ms;
+	}
+}
+
+
+

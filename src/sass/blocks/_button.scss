@@ -1,0 +1,93 @@
+/*---------- Button ----------*/
+
+.clplace-btn {
+	display: inline-flex;
+}
+.clplace-btn .item-btn {
+	font-weight: 500;
+	color: #111111;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	padding: 16px 28px;
+	z-index: 1;
+	&.primary-btn {
+		position: relative;
+		color: $white_color;
+		background-color: $primary_color;
+		&:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: -75%;
+			z-index: 2;
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+			-webkit-transform: skewX(25deg);
+			transform: skewX(25deg);
+		}
+	}
+	&:hover {
+		background-color: #ffffff;
+		color: var(--rt-primary-color);
+	}
+
+	&.primary-btn {
+		&:hover {
+			background-color: $primary_color;
+			color: $white_color;
+			&:after {
+				left: 60%;
+				-webkit-transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+				transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+				visibility: visible;
+			}
+		}
+
+	}
+}
+
+.clplace-btn,
+.search-btn {
+	.ws-button .btn-primary,
+	.elementor-button,
+	.submit-btn {
+		position: relative;
+		overflow: hidden;
+		&:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: -75%;
+			z-index: 2;
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+			-webkit-transform: skewX(25deg);
+			transform: skewX(25deg);
+		}
+		&:hover {
+			&:after {
+				left: 60%;
+				-webkit-transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+				transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.elementor-align-center.clplace-btn {
+	text-align: center;
+	justify-content: center;
+}
+
+.clplace-btn.elementor-widget-button .elementor-button {
+	background-color: $primary_color;
+}
+

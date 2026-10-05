@@ -1,0 +1,44 @@
+/*---------- Recent Posts ----------*/
+
+.clplace-widget-post {
+	gap: 20px;
+	display: flex;
+	flex-flow: column;
+	.article-inner-wrapper {
+		gap: 15px;
+		display: flex;
+		border: none;
+		position: relative;
+		border-radius: 10px;
+		.post-thumbnail-wrap {
+			width: 70px;
+		}
+		.post-thumbnail img,
+		.post-thumbnail a {
+			width: 100%;
+			height: auto;
+			border-radius: 5px;
+		}
+		.entry-wrapper {
+			flex: 1;
+			padding: 0;
+		}
+		.entry-title {
+			font-size: 18px;
+			line-height: 1.2;
+			margin-bottom: 0;
+			color: $title_color;
+			a {
+				color: $title_color;
+				&:hover {
+					color: $primary_color;
+				}
+			}
+		}
+	}
+	.clplace-post-meta {
+		ul li {
+			padding-bottom: 0;
+		}
+	}
+}

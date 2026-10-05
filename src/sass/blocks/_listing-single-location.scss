@@ -1,0 +1,65 @@
+/*---------- Listing Single Location ----------*/
+
+/* = layout 3 = */
+.rtcl-el-listing-location-box.location-box-style-3 {
+	border-radius: 8px;
+	position: relative;
+	.rtcl-image-wrapper {
+		.rtin-img {
+			&:before {
+				background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, rgba(0, 0, 0, 0.6) 80%);
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.rtin-content {
+		text-align: center;
+		margin-bottom: 20px;
+		padding-bottom: 32px;
+		.rtin-title {
+			left: 0;
+			padding: 0;
+			width: 100%;
+			bottom: -100px;
+			font-size: 20px;
+			position: absolute;
+			@include transition_default();
+			a:hover {
+				color: $primary_color;
+			}
+		}
+	}
+	.rtin-counter {
+		top: 20px;
+		right: 20px;
+		padding: 0 7px;
+		font-size: 13px;
+		border-radius: 5px;
+		position: absolute;
+		display: inline-flex;
+		color: $white_color;
+		@include transition_default();
+		background-color: $primary_color;
+		&:hover {
+			color: $primary_color;
+			background-color: $white_color;
+		}
+	}
+	&:hover {
+		.rtcl-image-wrapper {
+			.rtin-img {
+				&:before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		.rtin-content {
+			.rtin-title {
+				bottom: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+/*---------- Listing Location Slider ----------*/
+.rt-listing-locations-slider-wrapper {
+	overflow: hidden;
+	&:hover {
+		.swiper-button-prev, .swiper-rtl .swiper-button-next {
+			left: 10px;
+			opacity: 1;
+			visibility: visible;
+		}
+		.swiper-button-next, .swiper-rtl .swiper-button-prev {
+			right: 10px;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+.location-box {
+	width: 100%;
+	overflow: hidden;
+	flex-flow: column;
+	border-radius: 10px;
+	display: inline-flex;
+	background-color: #fbfbfb;
+	@include transition_default();
+	.location-box-img {
+		display: inline-flex;
+		overflow: hidden;
+		img {
+			width: 100%;
+			@include transition_default();
+		}
+	}
+	.location-box-content {
+		text-align: center;
+		padding: 10px 30px 22px 30px;
+		.listing-location {
+			margin-bottom: 5px;
+		}
+		.listing-count .count {
+			color: $white_color;
+			background-color: $primary_color;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 4px;
+		}
+	}
+	&:hover {
+		.location-box-img {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

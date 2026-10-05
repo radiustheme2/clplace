@@ -1,0 +1,12 @@
+/*---------- Accordion Addons ----------*/
+.elementor-accordion {
+	display: flex;
+	flex-flow: column;
+	.elementor-tab-content {
+		border-color: transparent !important;
+		padding-top: 5px !important;
+	}
+}
+.elementor-accordion-icon i {
+	display: inline-block;
+}

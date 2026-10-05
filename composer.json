@@ -1,0 +1,34 @@
+{
+	"name": "radiustheme/clplace",
+	"description": "RadiusTheme WordPress Starter Theme for Place directory theme",
+	"keywords": [
+		"WordPress",
+		"Theme",
+		"Starter"
+	],
+	"homepage": "https://github.com/RadiusTheme",
+	"license": "GPL-3.0",
+	"version": "4.0.0",
+	"authors": [
+		{
+			"name": "RadiusTheme",
+			"email": "support@radiustheme.com",
+			"homepage": "https://radiustheme.com",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"RT\\Clplace\\": "./inc"
+		},
+		"files": [
+			"./inc/template-tags.php",
+			"./inc/Lib/updater/theme-updater.php"
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": false
+		}
+	}
+}

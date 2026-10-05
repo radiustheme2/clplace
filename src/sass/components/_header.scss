@@ -1,0 +1,276 @@
+/*---------- Header ----------*/
+
+$dropdown_top_bottom_margin: 10px;
+
+.header-container.rt-container {
+	position: relative;
+}
+
+.header-fullwidth,
+.header--fluid {
+	.header-container {
+		@media screen and (min-width: 991px){
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.rt-mobile-logo {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.rt-site-logo {
+		display: none;
+	}
+}
+
+.main-header-section {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.084);
+	b.caret {
+		display: none;
+	}
+}
+
+.site-branding {
+	display: flex;
+	align-items: center;
+	font-size: 40px;
+	font-weight: bold;
+
+	@media screen and (max-width: 767px) {
+		font-size: 32px;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	a {
+		display: flex;
+		color: $white_color;
+		padding: 10px 0;
+		font-weight: bold;
+		transition: color 0.4s;
+		@media (max-width: 767px) {
+			width: 150px;
+		}
+		@media (max-width: 575px) {
+			width: 120px;
+		}
+	}
+
+	a:hover {
+		@extend .primaryColor;
+	}
+
+	.light-logo {
+		display: none;
+	}
+
+}
+
+.site-header {
+	left: 0;
+	right: 0;
+	z-index: 5;
+	position: absolute;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* Menu icon style
+***************************/
+
+.menu-icon-wrapper {
+	gap: 15px;
+	display: flex;
+	padding-left: 15px;
+	margin-left: auto;
+	align-items: center;
+
+	@media (max-width: 575px) {
+		padding-left: 0;
+	}
+
+	.menu-bar {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.ham_burger {
+			width: 47px;
+			height: 47px;
+			margin: 0 -13px;
+			.line {
+				stroke: $white_color;
+				@include transition_default();
+			}
+			&:hover .line {
+				stroke: $primary_color;
+			}
+		}
+	}
+	.clplace-search-popup,
+	.clplace-user-login {
+		a {
+			gap: 8px;
+			display: flex;
+			font-weight: 400;
+			padding: 5px 5px;
+			align-items: center;
+			justify-content: center;
+			transition: all .3s linear;
+			color: $white_color;
+			i {
+				font-size: 20px;
+				transition: all .3s linear;
+
+				&.icon-author-img {
+					@media (min-width: 768px) {
+						display: none;
+					}
+				}
+			}
+			@media screen and (max-width: 1600px) {
+				font-size: 14px;
+				padding: 10px 10px;
+			}
+			&:hover {
+				color: $primary_color;
+				i.icon-vector {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	.clplace-get-started-btn {
+		a {
+			font-weight: 600;
+			border: 1px solid $white_color;
+			@media screen and (max-width: 1600px){
+				&.button-style-2 {
+					font-size: 12px;
+					padding: 10px 20px;
+				}
+			}
+		}
+	}
+
+	a:hover svg {
+		fill: $primary_color;
+	}
+
+	>ul {
+		@media (max-width: 375px) {
+			gap: 5px;
+		}
+	}
+
+	ul li {
+		list-style: none;
+		position: relative;
+		&.desktop-hamburger {
+			@media (max-width: 1024px) {
+				display: none;
+			}
+		}
+		&.mobile-hamburger {
+			@media (min-width: 1025px) {
+				display: none;
+			}
+		}
+		&.clplace-user-login {
+			i.icon-author {
+				display: none;
+			}
+			@media (max-width: 767px) {
+				.btn-label {
+					display: none;
+				}
+				i.icon-author {
+					display: block;
+				}
+			}
+		}
+		&.clplace-get-started-btn {
+			span.btn-icon {
+				display: none;
+				font-size: 22px;
+			}
+			@media (max-width: 767px) {
+				.btn-label {
+					display: none;
+				}
+				span.btn-icon {
+					display: block;
+				}
+			}
+		}
+	}
+
+	svg {
+		width: 22px;
+		height: 22px;
+		fill: $white_color;
+		path {
+			fill: $white_color;
+		}
+	}
+
+	ul.has-separator {
+		gap: 13px;
+	}
+	.has-separator li:not(:last-child){
+		padding-right: 14px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			width: 1px;
+			height: 23px;
+			background: $meta_color;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	.has-button li:nth-last-child(2) {
+		padding-right: 4px;
+	}
+	.has-button li:nth-last-child(2)::after {
+		content: none;
+	}
+}
+
+//Main Navigation
+@import "navigation";
+
+//Mega-menu CSS
+@import "parts/_header-megamenu";
+
+//Header search
+@import "parts/_header-search";
+
+// Off canvas drawer
+@import "parts/_header-offcanvas";
+
+//Topbar Navigation
+@import "parts/_header-topbar";
+
+// Sticky Menu CSS
+@import "parts/_header-sticky";
+
+//Transparent Header
+@import "parts/_header-transparent";
+
+@import "parts/_hamburg-menu";

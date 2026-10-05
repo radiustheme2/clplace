@@ -1,0 +1,83 @@
+/*---------- Variables ----------*/
+
+//Grid
+$columns: 12;
+$gutter: 30px;
+$spacing: 20;
+$container_width: 1320px;
+
+//Spacing
+$paddings: ('pt': 'padding-top', 'pr': 'padding-right', 'pb': 'padding-bottom', 'pl': 'padding-left');
+$margins: ('mt': 'margin-top', 'mr': 'margin-right', 'mb': 'margin-bottom', 'ml': 'margin-left');
+
+$allSpacing: 0, 5, 8, 10, 15, 16, 20, 30, 40, 50, 60, 80, 100, 120, 150, 180, 200;
+$mediaSpacing: 30, 50, 80, 100, 120, 150;
+
+//Media Queries
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1140px;
+
+$breakpoints: ('sm': $sm, 'md': $md, 'lg': $lg, 'xl': $xl);
+
+//Colours
+$primary_color: var(--rt-primary-color);
+$primary_dark_color: var(--rt-primary-dark);
+$primary_light_color: var(--rt-primary-light);
+$secondary_color: var(--rt-secondary-color);
+$body_color: var(--rt-body-color);
+$title_color: var(--rt-title-color);
+$meta_color: var(--rt-meta-color);
+$meta_light: var(--rt-meta-light);
+$gray20: var(--rt-gray20);
+$gray40: var(--rt-gray40);
+
+
+$white_color: #FFFFFF;
+$black_color: #000000;
+$footer_bg: #050608;
+$border_color: #D9D9D9;
+
+$body_rgb: var(--rt-body-rgb);
+$title_rgb: var(--rt-title-rgb);
+$primary_rgb: var(--rt-primary-rgb);
+$secondary_rgb: var(--rt-secondary-rgb);
+
+//Headers
+$dropdown_width: 240px;
+$transparent_menu_color: rgba(255, 255, 255, 0.9);
+
+// custom colours
+$colors: (
+	'primary': $primary_color,
+	'primary-dark': $primary_dark_color,
+	'primary-light': $primary_light_color,
+	'secondary': $secondary_color,
+	'body': $body_color,
+	'title': $title_color,
+	'meta': $meta_color,
+	'grey1': $gray40,
+	'grey2': $gray20,
+	'white': $white_color,
+	'black': $black_color,
+);
+
+//Typography
+
+$base_font: var(--rt-body-font, 'Outfit'), sans-serif;
+$heading_font: var(--rt-heading-font, 'IBM Plex Sans'), sans-serif;
+$menu_font: var(--rt-menu-font, 'IBM Plex Sans'), sans-serif;
+
+$base_fs: 16px;
+
+//Animations
+$time: 320ms;
+$time_slow: 700ms;
+
+$swing: cubic-bezier(0.55, 0, 0.1, 1);
+$swift: cubic-bezier(0.4, 0, 0.2, 1);
+$ease: ease;
+
+//nav drawer width
+$nav_drawer_width: 300px;

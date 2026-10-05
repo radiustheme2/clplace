@@ -1,0 +1,115 @@
+/*---------- Transparent Header ----------*/
+.has-trheader {
+	&.has-menu-shadow .site-header {
+		&::before {
+			content: "";
+			background: rgba(0, 0, 0, 0);
+			background: -webkit-linear-gradient(top, rgb(0 0 0 / 58%) 0%, rgba(0, 0, 0, 0) 100%);
+			background: linear-gradient(to bottom, rgb(0 0 0 / 68%) 0%, rgba(0, 0, 0, 0) 100%);
+			top: 0;
+			position: absolute;
+			width: 100%;
+			height: 220px;
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+	.site-header {
+		position: absolute;
+		width: 100%;
+		z-index: 99;
+		color: $white_color;
+
+		.main-header-section:not(.rt-sticky) {
+			background: none !important;
+		}
+
+		.clplace-navigation ul li:hover > a,
+		.clplace-navigation ul li.current-menu-item > a,
+		.clplace-navigation ul li.current-menu-ancestor > a {
+			color: $primary_color;
+		}
+
+		.clplace-navigation ul li:hover > a svg path,
+		.clplace-navigation ul li.current-menu-item > a svg path,
+		.clplace-navigation ul li.current-menu-ancestor > a svg path {
+			fill: $primary_color;
+		}
+
+		.clplace-navigation ul li a svg {
+			opacity: 0.7;
+		}
+
+		.menu-bar span {
+			background-color: $transparent_menu_color !important;
+		}
+
+		.clplace-navigation ul > li > ul {
+			background-color: $white_color;
+		}
+
+		.clplace-navigation ul > li > ul li > a {
+			color: $body_color;
+		}
+
+		.clplace-navigation ul > li > ul li.current-menu-ancestor > a,
+		.clplace-navigation ul > li > ul li.current-menu-item > a,
+		.clplace-navigation ul > li > ul li > a:hover {
+			color: $white_color;
+			background-color: $primary_color;
+		}
+
+		.menu-icon-wrapper .has-separator li::after {
+			background: $transparent_menu_color;
+		}
+	}
+
+	.rt-sticky {
+		background: rgba($title_rgb, 0.94);
+	}
+
+	@media (max-width: 767px) {
+		.rt-site-logo {
+			display: block;
+			&.light-logo {
+				display: none;
+			}
+		}
+		.rt-mobile-logo {
+			display: none;
+		}
+	}
+
+	&.tr-header-light {
+		.rt-site-logo {
+			&.dark-logo {
+				display: none;
+			}
+			&.light-logo {
+				display: block;
+			}
+		}
+		.site-branding a,
+		.clplace-navigation *,
+		.clplace-navigation ul li a {
+			color: $transparent_menu_color;
+		}
+
+		.clplace-topbar .caret svg,
+		.main-header-section .caret svg {
+			width: 9px;
+			height: 9px;
+			fill: $white_color;
+		}
+
+		.menu-icon-wrapper svg,
+		.menu-icon-wrapper a {
+			fill: $transparent_menu_color;
+			color: $transparent_menu_color;
+		}
+
+		.menu-icon-wrapper .menu-bar .ham_burger .line {
+			stroke: $transparent_menu_color;
+		}
+	}
+}

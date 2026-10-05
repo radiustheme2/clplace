@@ -1,0 +1,122 @@
+/*---------- Topbar Navigation ----------*/
+.clplace-topbar {
+	font-size: 13px;
+	padding: 8px 0;
+	border-bottom: 1px solid rgba($black_color, 0.1);
+	background: rgba($title_rgb, 0.9);
+	color: $gray40;
+	@media(max-width: 991px) {
+		display: none;
+	}
+	@media(max-width: 650px) {
+		#topbar-menu > div{
+			display: none;
+		}
+		.topbar-right {
+			padding: 5px 0;
+		}
+	}
+
+	.topbar-row {
+		gap: 10px;
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+		}
+	}
+
+	//Topbar eft info
+	.topbar-left {
+		@media screen and (max-width: 767px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		li {
+			gap: 5px;
+			display: inline-flex;
+		}
+		li a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: inherit;
+			color: $gray40;
+			&:hover {
+				color: $primary_color;
+			}
+		}
+	}
+
+	.clplace-navigation {
+		justify-content: flex-start;
+	}
+
+	.social-icon {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: inherit;
+
+			&:hover svg {
+				fill: $primary_color;
+			}
+		}
+
+		[class*=rticon] svg {
+			width: 15px;
+			height: 15px;
+			fill: $gray40;
+		}
+	}
+
+
+	#topbar-menu {
+		ul.clplace-topbar-menu > li > a {
+			color: $gray40;
+		}
+
+		ul li a {
+			padding: 5px 20px 5px 0;
+			color: inherit;
+			font-weight: normal;
+		}
+
+		ul ul li a {
+			font-size: 0.95em;
+			line-height: 1.6em;
+			padding: 3px 27px 3px 18px;
+			color: $body_color;
+		}
+
+		ul ul li a:hover {
+			@extend .primaryColor;
+		}
+
+		ul.clplace-topbar-menu > li.current-menu-item > a,
+		ul.clplace-topbar-menu > li.current-menu-ancestor > a {
+			color: $white_color !important;
+		}
+
+		ul ul li.current_page_item > a,
+		ul ul li.current-menu-ancestor > a {
+			color: $primary_color !important;
+		}
+
+		.clplace-topbar-menu > li .dropdown-menu li a .caret svg {
+			transform: rotate(-90deg) scale(0.8);
+		}
+
+		.clplace-topbar-menu > li > a .caret svg {
+			transform: scale(0.8);
+			fill: $gray40;
+		}
+	}
+}
+
+.has-trheader .site-header .clplace-topbar * {
+	color: $gray40 !important;
+}

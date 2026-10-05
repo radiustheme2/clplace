@@ -1,0 +1,63 @@
+/*---------- Extended ----------*/
+
+.metaStyleDash {
+	content: "-----";
+	margin-right: 7px;
+	letter-spacing: -4px;
+	transform: scaleY(.8);
+	width: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	//@include transition_default();
+}
+
+.primaryColor {
+	color: $primary_color;
+}
+
+.secondaryColor {
+	color: $secondary_color;
+}
+
+.secondaryBG {
+	background-color: $secondary_color;
+}
+
+.primaryBG {
+	background-color: $primary_color;
+}
+
+.whiteColor {
+	color: $white_color;
+}
+
+.whiteBG {
+	background-color: $white_color;
+}
+
+.blackColor {
+	color: $black_color;
+}
+
+.blackBG {
+	background-color: $black_color;
+}
+
+.bgGradient50:after {
+	opacity: .5;
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#111),to(transparent));
+	background-image: -webkit-linear-gradient(transparent,#111);
+	background-image: -moz-linear-gradient(transparent,#111),-moz-linear-gradient(transparent,#111);
+	background-image: -o-linear-gradient(transparent,#111),-o-linear-gradient(transparent,#111);
+	background-image: linear-gradient(transparent,#111),linear-gradient(transparent,#111);
+	content: "";
+	height: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	@include transition_default();
+}
+

@@ -1,0 +1,46 @@
+/*---------- Listing Pagination ----------*/
+.rtcl-ajax-pagination-wrap,
+.rtcl nav.rtcl-pagination {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.rtcl-ajax-pagination-wrap ul li,
+.rtcl nav.rtcl-pagination ul li {
+	border: none;
+	border-radius: 0;
+}
+
+.rtcl nav.rtcl-pagination ul li .page-numbers,
+.rtcl-ajax-pagination-wrap ul li span {
+	width: 45px;
+	height: 45px;
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s;
+	color: $title_color;
+	border-radius: 5px;
+	border: 1px solid #D0D0D0;
+}
+.rtcl-ajax-pagination-wrap ul li .prev.page-numbers,
+.rtcl-ajax-pagination-wrap ul li .next.page-numbers,
+.rtcl nav.rtcl-pagination ul li .prev.page-numbers,
+.rtcl nav.rtcl-pagination ul li .next.page-numbers {
+	font-size: 1.2rem;
+}
+.rtcl nav.rtcl-pagination ul li .page-numbers:hover,
+.rtcl-ajax-pagination-wrap ul li:hover span,
+.rtcl-ajax-pagination-wrap ul li.active span {
+	color: #fff;
+	border-color: $primary_color;
+	background-color: $primary_color;
+}
+.rtcl nav.rtcl-pagination ul li .page-numbers.current {
+	color: #fff;
+	border-color: $primary_color;
+	background-color: $primary_color;
+}

@@ -1,0 +1,20 @@
+/*---------- Elementor global CSS ----------*/
+.elementor-icon.elementor-social-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.elementor-widget-image a img[src$=".svg"] {
+	width: auto !important;
+}
+
+.zooming-image {
+	-webkit-animation: rtZoom 30s linear infinite;
+	animation: rtZoom 30s linear infinite;
+}
+
+.zoom-background {
+	animation: zoomInZoomOut 10s infinite;
+	background-size: cover;
+	background-position: center;
+}

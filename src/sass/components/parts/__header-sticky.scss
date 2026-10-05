@@ -1,0 +1,115 @@
+/*---------- Sticky Menu ----------*/
+//.rt-sticky {
+////	position: fixed;
+////	top: 0;
+////	width: 100%;
+////	z-index: 9999;
+////	left: 0;
+////	right: 0;
+////	background: rgba($title_rgb, 0.94);
+////	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+////	-webkit-animation: upsdown 1000ms;
+////	animation: upsdown 1000ms;
+////	.rt-site-logo.dark-logo {
+////		display: none;
+////	}
+////	.rt-site-logo.light-logo {
+////		display: block !important;
+////	}
+////	.clplace-navigation ul li a,
+////	.menu-icon-wrapper a {
+////		color: rgba(255, 255, 255, 0.9);
+////	}
+////	.clplace-navigation ul li a {
+////		svg path {
+////			fill: rgba(255, 255, 255, 0.9);
+////		}
+////	}
+////	.clplace-navigation ul li.current-menu-ancestor a {
+////		svg path {
+////			fill: $primary_color;
+////		}
+////	}
+////	.menu-icon-wrapper .menu-bar .ham_burger .line {
+////		stroke: $white_color;
+////	}
+////	.clplace-navigation ul > li > ul li > a {
+////		color: $body_color;
+////		&:hover {
+////			color: $white_color;
+////		}
+////	}
+////	.rt-mobile-logo {
+////		display: none;
+////	}
+////}
+////body .main-header-section.rt-sticky {
+////	background: rgba($title_rgb, 0.94);
+////}
+////body.admin-bar .rt-sticky {
+////	top: 32px;
+////	@media (max-width: 782px) {
+////		top: 46px;
+////	}
+////	@media (max-width: 600px) {
+////		top: 0;
+////	}
+////}
+
+
+//.header--fixed {
+//	position: absolute;
+//	z-index: 9;
+//	right: 0;
+//	left: 0;
+//	top: 0
+//}
+
+.headroom-sticky-header {
+	top: 0;
+	position: fixed;
+}
+.admin-bar .headroom-sticky-header {
+	top: 31px;
+	@media screen and (max-width: 782px) {
+		top: 45px;
+	}
+}
+.admin-bar.mn-top {
+	.headroom-sticky-header {
+		@media screen and (max-width: 600px) {
+			top: 0;
+		}
+	}
+}
+.headroom {
+	@include transition_default();
+	will-change: transform;
+	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.headroom--pinned {
+	transform: translateY(0);
+}
+
+.headroom--unpinned {
+	transform: translateY(-100%)
+}
+.header-height-fixed {
+	width: 100%;
+	height: 80px;
+	display: inline-block;
+	@media screen and (max-width: 1024px) {
+		height: 75px;
+	}
+}
+.header-height-fixed.header-style-2 {
+	@media screen and (min-width: 1025px) {
+		height: 140px;
+	}
+}
+
+.headroom--not-top {
+	background-color: rgba(12, 22, 58, 0.9);
+	@include transition_default();
+}

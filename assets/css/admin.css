@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Add all your styles for the Admin area
+--------------------------------------------------------------*/
+.wp-core-ui .button-primary {
+  transition: all ease;
+  background: #27c5be;
+  border-color: #00ffc1 #07ca70 #00ca63;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 6px -10px rgba(0, 0, 0, 0.7);
+}
+
+#customize-control-rt_banner_content_alignment .image_radio_button_control .radio-button-label {
+  width: 25%;
+  display: inline-flex;
+}
+#customize-control-rt_banner_content_alignment .image_radio_button_control .radio-button-label > img {
+  padding: 15px;
+}
+#customize-control-rt_banner_content_alignment .image_radio_button_control .radio-button-label > input:checked + img {
+  border: 5px solid #d4caca;
+}
+
+#customize-controls .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  position: relative;
+  margin-right: 2px;
+  padding-right: 2px;
+  padding-left: 0;
+}
+
+.postbox {
+  padding: 15px;
+}
+
+/* = Form Builder = */
+span.ant-checkbox-label i {
+  display: none;
+}
+
+/*# sourceMappingURL=admin.css.map*/

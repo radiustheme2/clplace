@@ -1,0 +1,45 @@
+/*---------- Listing Global Css ----------*/
+.rtcl a:hover {
+	text-decoration: none;
+}
+.rtcl .dropdown-toggle:after {
+	display: none;
+}
+.rtcl article,
+.rtcl aside,
+.rtcl figcaption,
+.rtcl figure,
+.rtcl footer,
+.rtcl header,
+.rtcl hgroup,
+.rtcl main,
+.rtcl nav,
+.rtcl section {
+	display: inherit;
+}
+
+.rtcl .rtcl-listings-actions {
+	gap: 10px;
+}
+
+#rtcl-compare-btn-wrap a:hover {
+	color: $white_color;
+}
+
+#rtcl-compare-wrap .rtcl-compare-item {
+	align-items: center;
+}
+
+@import "parts/_post";
+@import "parts/_paginations";
+@import "parts/_single";
+@import "parts/_listing-single-head";
+@import "parts/_gallery";
+@import "parts/_listing-single-sidebar";
+@import "parts/_review";
+@import "parts/_related-listings";
+@import "parts/_listing-map";
+@import "parts/_listing-search";
+@import "parts/_my-account";
+@import "parts/_author";
+@import "parts/_listing-form";

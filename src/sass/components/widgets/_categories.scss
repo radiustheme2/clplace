@@ -1,0 +1,31 @@
+/*---------- Categories ----------*/
+
+.wp-block-categories {
+	gap: 12px;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	flex-flow: column;
+	margin-bottom: 15px;
+	li {
+		a {
+			font-size: 18px;
+			position: relative;
+			padding-left: 20px;
+			&:before {
+				top: 3px;
+				left: 0;
+				content: '\e832';
+				position: absolute;
+				font-family: "fontello";
+				font-size: 14px;
+				@include transition_default();
+			}
+			&:hover {
+				&:before {
+					color: $primary_color;
+				}
+			}
+		}
+	}
+}

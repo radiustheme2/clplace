@@ -1,0 +1,30 @@
+.social-media {
+	.social-media-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		.social-icon {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: inherit;
+
+				&:hover svg {
+					fill: $primary_color;
+				}
+			}
+
+			[class*=rticon] svg {
+				width: 15px;
+				height: 15px;
+				fill: $gray40;
+			}
+		}
+	}
+}

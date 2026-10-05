@@ -1,0 +1,33 @@
+/*---------- Footer Menu Wrapper ----------*/
+.site-footer {
+	.footer-menu-wrapper {
+		border-top: 1px solid $gray20;
+
+		.clplace-footer-1 & {
+			.align-default {
+				justify-content: center;
+			}
+		}
+	}
+
+	.clplace-navigation ul > li > ul.depth_0 {
+		bottom: 100%;
+		top: auto;
+	}
+
+	.clplace-navigation ul li ul li ul {
+		left: 100%;
+		top: auto;
+		bottom: 0;
+	}
+
+	//.clplace-navigation ul > li:first-child:hover > ul.dropdown-menu {
+	//	top: auto !important;
+	//	bottom: -10px !important;
+	//}
+
+	.clplace-navigation ul > li > ul.dropdown-menu {
+		top: 100% !important;
+		bottom: auto !important;
+	}
+}

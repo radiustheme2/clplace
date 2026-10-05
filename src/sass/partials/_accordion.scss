@@ -1,0 +1,80 @@
+.accordion-container {
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+    .accordion {
+        padding: 15px 25px;
+        border-radius: 20px;
+        background-color: #F9F9F9;
+    }
+}
+
+.accordion-container .menu-button {
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    align-items: center;
+    color: $black_color;
+    justify-content: flex-start;
+    background-color: transparent;
+    .icon {
+        &:before,
+        &:after {
+            top: 0;
+            left: 0;
+            content: '';
+            position: absolute;
+        }
+        &:before {
+            top: 7px;
+            left: 2px;
+            content: '+';
+        }
+        &:after {
+            top: 7px;
+            left: 3px;
+            opacity: 0;
+            content: '-';
+            font-size: 22px;
+        }
+    }
+    &.open {
+        padding-bottom: 12px;
+        .icon {
+            &:before {
+                opacity: 0;
+                transform: rotate(45deg);
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.accordion-container .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 0;
+    font-size: 18px;
+    position: relative;
+    border-radius: 100%;
+    align-items: center;
+    display: inline-flex;
+    color: $primary_color;
+    transition: 0.4s linear;
+    justify-content: center;
+    border: 1px solid $primary_color;
+}
+
+.accordion-container .content {
+    height: 0;
+    padding: 0 28px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    background-color: #F9F9F9;
+}

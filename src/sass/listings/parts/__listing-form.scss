@@ -1,0 +1,50 @@
+/*---------- Listing Form ----------*/
+#rtcl-form-builder-container {
+	padding: 30px 25px 50px;
+	margin: 10px 30px;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+/* = Logout Form = */
+.rtcl-form-page {
+	.rtcl-login-form-wrap {
+		max-width: 550px;
+		margin: 110px auto;
+		padding: 30px;
+		box-shadow: 0 0 20px #f0f0f0;
+		.form-group .form-check {
+			display: flex;
+			width: 200px;
+			align-items: center;
+			margin-left: 15px;
+			label {
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+		label {
+			font-size: 20px;
+			font-weight: 600;
+			color: $title_color;
+			margin-bottom: 5px;
+			display: inline-flex;
+		}
+		input {
+			border-radius: 6px;
+			font-size: 16px;
+			width: 100%;
+			padding: 17px;
+			min-height: 45px;
+			margin-bottom: 15px;
+			&[type='checkbox'] {
+				width: 20px;
+				min-height: auto;
+				margin-bottom: 4px;
+			}
+		}
+		.rtcl-forgot-password {
+			margin-top: 15px;
+		}
+	}
+}

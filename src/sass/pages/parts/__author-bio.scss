@@ -1,0 +1,23 @@
+/*---------- Author Bio ----------*/
+
+.blog-author-bio {
+	gap: 15px;
+	display: flex;
+	margin-bottom: 30px;
+	padding: 40px 50px;
+	border-radius: 10px;
+	background: $white_color;
+	border: 1px solid #F1F1F1;
+	.info-item.avatar {
+		width: 95px;
+		img {
+			border-radius: 100%;
+		}
+	}
+	.info-item.avatar-text {
+		flex: 1;
+		.author-title {
+			margin-bottom: 10px;
+		}
+	}
+}

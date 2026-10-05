@@ -1,0 +1,29 @@
+/*---------- Footer Copyright ----------*/
+.footer-copyright-wrapper {
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $gray40;
+	font-size: 14px;
+	background-color: $footer_bg;
+	border-top: 1px solid rgba(255, 255, 255, 0.107);
+	.copyright-text {
+		text-align: center;
+	}
+
+	a {
+		color: $gray40;
+	}
+
+	.copyright-content {
+		gap: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		@media screen and (max-width: 575px) {
+			flex-direction: column-reverse;
+			justify-content: center !important;
+		}
+	}
+}

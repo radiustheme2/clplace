@@ -1,0 +1,24 @@
+/*---------- Sidebar ----------*/
+
+.clplace-widget-area {
+	position: relative;
+	flex-flow: column;
+	@media (max-width: 991px) {
+		margin-top: 50px;
+	}
+	.widget {
+		padding: 30px;
+		width: 100%;
+		max-width: 100%;
+		border-radius: 10px;
+		background: $white_color;
+		-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+	}
+	@include font_size(40px, 1.5);
+}
+
+.widget-title {
+	@include font_size(24px, 1.2);
+	margin-bottom: 15px;
+}

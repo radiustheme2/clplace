@@ -1,0 +1,323 @@
+/*---------- Marketplace ----------*/
+.rtcl-listings .rtcl-add-to-cart-form input[type=submit] {
+	color: $white_color;
+	padding: 10px 20px;
+	background-color: $primary_color;
+}
+
+.rtcl-listings .rtcl-add-to-cart-form input[type=submit]:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.woocommerce-message {
+	margin: 0 auto;
+	max-width: 1170px;
+	margin-bottom: -65px;
+	border-top-color: $primary_color;
+}
+
+.woocommerce-message::before {
+	color: $primary_color;
+}
+
+.single-rtcl_listing.rtcl-marketplace .rtcl-add-to-cart-form {
+	justify-content: flex-end;
+}
+
+.single-rtcl_listing.rtcl-marketplace .rtcl-add-to-cart-form input {
+	width: 100%;
+	flex: 0 0 100%;
+	font-size: 20px;
+	text-align: center;
+	padding: 16px 30px;
+	color: $white_color;
+	margin-bottom: 12px;
+	border-radius: 12px;
+	transition: all .3s linear;
+	background-color: $primary_color;
+	border: 1px solid $primary_color !important;
+}
+
+.single-rtcl_listing.rtcl-marketplace .rtcl-add-to-cart-form input:focus {
+	outline: none;
+	box-shadow: none;
+	color: $white_color;
+	background-color: $primary_color;
+}
+
+.single-rtcl_listing.rtcl-marketplace .rtcl-add-to-cart-form input:hover {
+	color: $title_color;
+	border-color: $primary_color;
+	background-color: $white_color;
+}
+
+table.wc-block-cart-items,
+table.wc-block-cart-items td,
+table.wc-block-cart-items th {
+	border: 1px solid #eceef0 !important;
+}
+
+.is-large.wc-block-cart .wc-block-cart-items td {
+	padding: 10px !important;
+}
+
+.wc-block-cart .wc-block-cart-items th {
+	text-align: center !important;
+}
+
+.is-large.wc-block-cart .wc-block-cart-items td {
+	padding: 10px !important;
+}
+
+.wc-block-components-sidebar {
+	padding: 0 !important;
+	border: 1px solid #eceef0;
+}
+
+.wc-block-cart .wc-block-cart__totals-title {
+	text-align: left !important;
+	padding: 7px 16px 3px !important;
+}
+
+body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button:not(.is-link):focus {
+	box-shadow: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.wc-block-checkout__actions_row .wc-block-components-checkout-place-order-button {
+	color: var(--color-white);
+	background-color: var(--rt-primary-color);
+}
+
+.wc-block-checkout__actions_row .wc-block-components-checkout-place-order-button {
+	padding: 0 !important;
+}
+
+/*---------- BuddyPress ----------*/
+#header-cover-image {
+	background-color: #dbdbdb;
+}
+
+.bp-navs ul li a,
+.bp-navs ul li span {
+	padding: 5px 15px;
+	color: #222835;
+}
+
+.buddypress-wrap .main-navs:not(.dir-navs) li.selected a,
+.buddypress-wrap .main-navs:not(.dir-navs) li.current a,
+.buddypress-wrap .bp-navs:not(.dir-navs) li.selected a,
+.buddypress-wrap .bp-navs:not(.dir-navs) li.current a,
+.buddypress-wrap .bp-navs li:not(.current) a:focus,
+.buddypress-wrap .bp-navs li:not(.current) a:hover,
+.buddypress-wrap .bp-navs li:not(.selected) a:focus,
+.buddypress-wrap .bp-navs li:not(.selected) a:hover {
+	color: $white_color;
+	background: var(--rt-primary-color);
+}
+
+.activity-update-form #whats-new-textarea textarea {
+	border-color: #cccccc;
+}
+
+.activity-update-form #whats-new-textarea textarea:focus-visible {
+	outline: none;
+	box-shadow: none;
+}
+
+.page-content-block .type-page .bp-wrap ul {
+	padding-left: 0;
+}
+
+.buddypress .buddypress-wrap .activity-read-more a:focus,
+.buddypress .buddypress-wrap .activity-read-more a:hover,
+.buddypress .buddypress-wrap .button-nav li a:focus,
+.buddypress .buddypress-wrap .button-nav li a:hover,
+.buddypress .buddypress-wrap .button-nav li.current a,
+.buddypress .buddypress-wrap .comment-reply-link:focus,
+.buddypress .buddypress-wrap .comment-reply-link:hover,
+.buddypress .buddypress-wrap .generic-button a:focus,
+.buddypress .buddypress-wrap .generic-button a:hover,
+.buddypress .buddypress-wrap a.button:focus,
+.buddypress .buddypress-wrap a.button:hover,
+.buddypress .buddypress-wrap button:focus,
+.buddypress .buddypress-wrap button:hover,
+.buddypress .buddypress-wrap input[type=button]:focus,
+.buddypress .buddypress-wrap input[type=button]:hover,
+.buddypress .buddypress-wrap input[type=reset]:focus,
+.buddypress .buddypress-wrap input[type=reset]:hover,
+.buddypress .buddypress-wrap input[type=submit]:focus,
+.buddypress .buddypress-wrap input[type=submit]:hover {
+	color: #fff;
+	background: var(--rt-primary-color);
+	border-color: var(--rt-primary-color);
+	transition: all 0.3s linear;
+}
+
+.buddypress .buddypress-wrap input[type=submit] {
+	padding: 15px 25px;
+}
+
+#item-header-cover-image #item-header-avatar {
+	padding: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.buddypress-wrap .select-wrap {
+	border: 1px solid #ccc;
+}
+
+.buddypress-wrap .rtcl-action-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buddypress-wrap .rtcl-MyAccount-content-inner {
+	padding: 0;
+}
+
+.buddypress-wrap .listing-thumb {
+	max-width: 120px;
+}
+
+.buddypress-wrap ul.rtcl-meta {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.users-header #item-header-avatar:hover .link-change-overlay {
+	border-radius: 0;
+}
+
+.buddypress-wrap ul.rtcl-meta li {
+	margin: 0;
+}
+
+.member-status {
+	top: -5px;
+	right: 12px;
+	width: 15px;
+	display: flex;
+	height: 15px;
+	position: absolute;
+}
+
+.member-status.online {
+	background-color: #48fb54;
+}
+
+.bp-wrap ul {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 10px;
+}
+
+.buddypress .buddypress-wrap input {
+	background-color: $white_color;
+}
+
+.buddypress .buddypress-wrap button {
+	width: auto;
+	height: 46px;
+	margin-left: 5px;
+	border-radius: 5px;
+	border: 1px solid #e4e4e4;
+}
+
+.buddypress .buddypress-wrap button:hover {
+	color: #fff;
+}
+
+.buddypress .buddypress-wrap button:hover svg path {
+	fill: #fff;
+}
+
+.rtcl-my-listing-table .rtcl-ad-details {
+	gap: 0;
+	display: flex;
+	column-gap: 10px;
+	flex-flow: column;
+}
+
+.rtcl-my-listing-table .rtcl-actions-wrap {
+	display: flex;
+	flex-flow: column;
+}
+
+.rtcl-my-listing-table .rtcl-actions-wrap .rtcl-actions {
+	gap: 0;
+	display: flex;
+	column-gap: 10px;
+	flex-flow: column;
+}
+
+.rtcl-my-listing-table .rtcl-actions-wrap .rtcl-actions a {
+	gap: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.rtcl-action-wrap .btn-success {
+	color: #fff;
+	border-color: $primary_color;
+	background-color: $primary_color;
+}
+
+.buddypress .buddypress-wrap .standard-form .user-pass1-wrap button {
+	width: auto;
+}
+
+span.rtcl-my-listings-table-toggle-info {
+	display: none;
+}
+
+.buddypress-wrap {
+	.rtcl-my-listing-table {
+		.listing-title {
+			text-transform: capitalize;
+		}
+	}
+}
+
+@media screen and (min-width: 46.8em) {
+	body.buddypress .site-content {
+		padding-top: 0;
+	}
+}
+
+.buddypress-wrap #pass-strength-result {
+	height: 45px;
+}
+
+/*---------- Coupon ----------*/
+.rtcl-checkout-form-wrap {
+	.rtcl-form-row label {
+		width: 100%;
+		display: flex;
+		margin-bottom: 3px !important;
+	}
+	.form-control {
+		width: 100%;
+		height: 45px;
+		padding: 10px;
+	}
+	.rtcl-pricing-visibility span {
+		padding: 0 8px;
+	}
+}
+
+.rtcl {
+	.rtcl-checkout-form-wrap {
+		a:hover {
+			color: $white_color;
+		}
+	}
+}
+
+.rtcl .rtcl-pricing-details-dp span {
+	padding: 2px 8px;
+}

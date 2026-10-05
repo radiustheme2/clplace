@@ -1,0 +1,187 @@
+
+/*============================
+# Review Schema Style
+=============================*/
+.rtrs-review-wrap {
+	background-color: #ffffff;
+}
+
+.rtrs-review-wrap .rtrs-sorting-bar {
+	background-color: #fff;
+	padding: 0;
+}
+
+.rtrs-review-wrap .rtrs-sorting-bar .rtrs-sorting-select select {
+	box-shadow: none;
+	border: 1px solid #eaeaea;
+	padding: 7px 32px 5px 13px;
+}
+
+.rtrs-review-wrap .rtrs-sorting-bar .rtrs-sorting-title {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.rtrs-review-wrap .rtrs-review-box .rtrs-each-review {
+	padding: 23px 25px 24px !important;
+	background: transparent !important;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+}
+
+.rtrs-review-wrap .rtrs-review-box .rtrs-review-body .rtrs-reply-btn .rtrs-item-btn {
+	background-color: var(--rt-primary-light3, #EAF7F4) !important;
+	color: var(--rt-primary-color) !important;
+}
+
+.rtrs-review-wrap .rtrs-review-box .rtrs-review-body .rtrs-reply-btn .rtrs-item-btn:hover {
+	background-color: var(--rt-primary-dark) !important;
+	color: #fff !important;
+}
+
+.rtrs-review-wrap .rtrs-review-box .rtrs-review-body .rtrs-review-title {
+	font-size: 20px;
+	font-weight: 500;
+	margin: 5px 0 8px;
+}
+
+.rtrs-review-wrap .rtrs-review-box .rtrs-review-body p {
+	margin-bottom: 0 !important;
+}
+
+.rtrs-review-wrap .rtrs-review-box .rtrs-review-body .rtrs-reply-btn {
+	padding: 0 !important;
+}
+
+body .rtrs-review-form {
+	background-color: transparent !important;
+	padding: 0 !important;
+	border: none;
+	margin-top: 25px;
+}
+
+.rtrs-review-wrap .rtrs-paginate {
+	margin: 0 0 10px !important;
+}
+
+.rtrs-review-wrap .rtrs-review-form .rtrs-rating-category li {
+	margin-bottom: 0 !important;
+}
+
+.rtrs-review-wrap .rtrs-review-form .rtrs-rating-category li {
+	line-height: 2 !important;
+}
+
+.rtrs-review-wrap .rtrs-review-form .rtrs-form-group {
+	margin-bottom: 20px !important;
+}
+
+.rtrs-review-wrap .rtrs-review-form .rtrs-form-group.rtrs-submit-button {
+	margin-bottom: 0 !important;
+}
+
+.rtrs-review-wrap .rtrs-review-form .rtrs-form-group input[submit] {
+	margin-bottom: 0 !important;
+}
+
+.rtrs-review-box .rtrs-review-body .rtrs-review-meta li {
+	margin-bottom: 0 !important;
+}
+
+.rtrs-summary {
+	//grid-template-columns: repeat(auto-fit, minmax(340px, 2fr)) !important;
+	grid-template-columns: 1fr 2fr;
+}
+
+.rtrs-summary .rtrs-rating-box {
+	flex-flow: column;
+	justify-content: center;
+	.rtrs-rating-icon {
+		flex: unset;
+	}
+}
+
+.rtrs-summary .rtrs-rating-box .rtrs-rating-number {
+	margin-right: 0;
+}
+
+.rtrs-summary .rtrs-rating-box .rtrs-rating-icon {
+	margin-top: 5px;
+	i {
+		font-size: 22px;
+	}
+}
+
+.rtrs-summary .rtrs-progress-wrap .rtrs-progress {
+	margin-bottom: 10px !important;
+}
+
+.rtrs-summary .rtrs-progress-wrap .rtrs-progress label {
+	min-width: 60px;
+	margin-bottom: 0 !important;
+}
+
+.rtrs-summary .rtrs-progress-wrap .rtrs-progress span {
+	min-width: 60px;
+}
+
+.rtrs-summary .rtrs-progress-wrap {
+	padding: 20px 30px 10px !important;
+}
+
+.rtrs-summary .rtrs-progress-wrap progress::-webkit-progress-value {
+	background: #ffb300 !important;
+}
+
+.rtrs-summary .rtrs-progress-wrap progress::-moz-progress-bar {
+	background: #ffb300 !important;
+}
+
+.rtrs-summary .rtrs-progress-wrap progress::-webkit-progress-bar {
+	height: 15px;
+	background: #FFF3DD !important;
+}
+
+.rtrs-summary .rtrs-progress-wrap progress {
+	color: var(--rt-primary-dark) !important;
+}
+
+.rtrs-review-box .rtrs-review-body .rtrs-review-meta .rtrs-review-date i:before {
+	color: var(--rt-primary-color) !important;
+}
+
+.rtrs-review-box .rtrs-review-body .rtrs-review-meta .rtrs-review-rating {
+	font-size: 18px;
+}
+
+.rtrs-summary .rtrs-progress-wrap .service-preogress[value]::-webkit-progress-value {
+	box-shadow: none;
+}
+
+.rtcl .star-rating {
+	width: 6.5rem !important;
+}
+
+.rtcl .star-rating:before {
+	color: #cc9000;
+	content: "\e872  \e872  \e872  \e872  \e872";
+}
+
+.rtcl .star-rating span:before {
+	color: #ffb400;
+	content: "\e808  \e808  \e808  \e808  \e808";
+}
+
+p#wait_approval {
+	padding-top: 0 !important;
+}
+
+.rtrs-review-box .rtrs-main-review {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.rtrs-multiple-comment {
+	margin-top: 10px;
+}
+

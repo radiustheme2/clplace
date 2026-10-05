@@ -1,0 +1,17 @@
+/*---------- Footer ----------*/
+
+.site-footer {
+	position: relative;
+	background: $footer_bg;
+
+	.footer-container {
+		position: relative;
+	}
+}
+
+@import 'parts/_footer-nav';
+@import 'parts/_footer-widgets';
+@import "parts/_footer-copyright";
+
+//Footer layout
+@import "parts/_footer-2";

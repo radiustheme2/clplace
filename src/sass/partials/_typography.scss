@@ -1,0 +1,106 @@
+body {
+	font-family: $base_font;
+	font-weight: 400;
+	@include font_size($base_fs);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading_font;
+	margin: 0 0 15px 0;
+	font-weight: 700;
+	color: $title_color;
+}
+
+// Headings
+h1,
+.h1 {
+	@include font_size(48px, 58px);
+
+	@media (max-width: #{$sm}) {
+		@include font_size(42px, 52px);
+	}
+}
+
+h2,
+.h2 {
+	@include font_size(40px, 50px);
+	@media (max-width: 767px) {
+		@include font_size(32px, 40px);
+	}
+}
+
+h3,
+.h3 {
+	@include font_size(32px, 40px);
+	@media (max-width: 767px) {
+		@include font_size(26px, 34px);
+	}
+}
+
+h4,
+.h4 {
+	@include font_size(26px, 34px);
+	@media (max-width: #{$sm}) {
+		@include font_size(18px, 26px);
+	}
+	@media (max-width: 767px) {
+		@include font_size(22px, 30px);
+	}
+}
+
+h5,
+.h5 {
+	@include font_size(20px, 30px);
+	@media (max-width: 767px) {
+		@include font_size(18px, 24px);
+	}
+}
+
+h6,
+.h6 {
+	@include font_size(18px, 28px);
+	@media (max-width: 767px) {
+		@include font_size(16px, 22px);
+	}
+}
+
+small,
+.small {
+	@include font_size(15px);
+}
+
+// alignments
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+// Modifiers
+.text-bold {
+	font-weight: 700;
+}
+
+.text-semibold {
+	font-weight: 600;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.no-line-height {
+	line-height: 1em !important;
+}

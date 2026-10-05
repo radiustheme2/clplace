@@ -1,0 +1,19 @@
+.rtl {
+	.newsletter-form-1 .fluentform .ff-el-group .ff-btn-submit img,
+	.prev.page-numbers,
+	.next.page-numbers {
+		transform: rotate(180deg);
+	}
+	.rtrs-review-wrap .rtrs-review-box .rtrs-each-review {
+		gap: 15px;
+	}
+
+	.swiper-rtl .swiper-button-next {
+		left: 0;
+		right: auto;
+	}
+	.swiper-rtl .swiper-button-prev {
+		right: 0;
+		left: auto;
+	}
+}

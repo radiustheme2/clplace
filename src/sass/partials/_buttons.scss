@@ -1,0 +1,120 @@
+button {
+	@include transition_default();
+	cursor: pointer;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	letter-spacing: 0.13px;
+	padding: ($base_fs - 2) ($base_fs + 6);
+	@include font_size($base_fs - 1, $base_fs - 1);
+	@include transition_default();
+
+	&:active {
+		box-shadow: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&.btn-xl {
+		$xl_size: $base_fs + 8;
+		padding: ($base_fs+8) ($base_fs + 16);
+		@include font_size($xl_size, $xl_size);
+	}
+
+	&.btn-lg {
+		$lg_size: $base_fs + 2;
+		padding: ($base_fs + 2) ($base_fs + 8);
+		@include font_size($lg_size, $lg_size);
+	}
+
+
+	&.btn-sm {
+		$lg_size: $base_fs - 3;
+		padding: ($base_fs - 4) ($base_fs + 4);
+		@include font_size($lg_size, $lg_size);
+	}
+
+	&.btn-xs {
+		$lg_size: $base_fs - 6;
+		padding: ($base_fs - 5) ($base_fs + 2);
+		@include font_size($lg_size, $lg_size);
+	}
+
+}
+
+//Button style
+.btn-primary {
+	@include button_style($white_color, $primary_color, $primary_color);
+}
+
+.btn-secondary {
+	@include button_style($white_color, $secondary_color, rgba($secondary_rgb, 0.8));
+}
+
+.btn-light {
+	@include button_style($white_color, $meta_color, $primary_color);
+}
+
+.btn-gray {
+	@include button_style($white_color, $meta_color, $primary_color);
+}
+
+button.button-style-1,
+a.button-style-1 {
+	@include button_style_1($white_color, $primary_color, $white_color, $primary_color );
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a.button-style-2 {
+	gap: 7px;
+	background: transparent;
+	color: $white_color;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	z-index: 0;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 12px 25px;
+	letter-spacing: 1px;
+	display: inline-flex;
+	&::before {
+		top: 0;
+		left: 0;
+		width: 0%;
+		bottom: 0;
+		content: "";
+		height: 100%;
+		z-index: -1;
+		border-radius: 5px;
+		position: absolute;
+		background-color: $white_color;
+		@include transition_default();
+	}
+	&:hover {
+		color: $title_color;
+		&::before {
+			width: 100%;
+		}
+	}
+}
+

@@ -1,0 +1,37 @@
+/*---------- Listing Review ----------*/
+
+/* = Review Form = */
+.rtrs-review-form .rtrs-multimedia-upload .rtrs-upload-box {
+  padding: 12px 16px;
+  border: 1px solid #EDEDED;
+  background-color: transparent;
+}
+.rtrs-review-wrap .rtrs-review-form .rtrs-form-group .rtrs-submit-btn {
+  margin-bottom: -40px;
+  background-color: $primary_color !important;
+  border: 1px solid $primary_color;
+}
+.rtrs-review-wrap .rtrs-review-form .rtrs-form-group .rtrs-submit-btn:hover {
+  color: $primary_color;
+  background-color: transparent !important;
+  border-color: $primary_color;
+}
+
+.rtrs-review-form .rtrs-rating-container>input+label {
+  width: 20px;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.rtcl .rtcl-Reviews.rtcl #review-form-wrapper #review-form,
+.rtcl .rtcl-Reviews.rtcl #comments {
+  padding: 0;
+  box-shadow: none;
+}
+
+.rtcl .rtcl-Reviews.rtcl #comments .rtcl-reviews-meta {
+  gap: 10px;
+}
+.rtcl .rtcl-Reviews.rtcl #comments .rtcl-reviews-meta .listing-meta {
+  margin: 0;
+}

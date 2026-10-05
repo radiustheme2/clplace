@@ -1,0 +1,99 @@
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin list_default {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+@mixin flex_center($direction:row) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+@mixin button_style($color, $bg, $bg_hover) {
+	color: $color;
+	background-color: $bg;
+	border-color: $bg;
+	&:hover {
+		color: $color;
+		background-color: $bg_hover;
+		border-color: $bg_hover;
+	}
+}
+
+@mixin button_style_1($color, $bg, $color_hover, $bg_hover){
+	color: $color;
+	border-color: $bg;
+	padding: 12px 25px;
+	background-color: $bg;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	&:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: -75%;
+		z-index: 2;
+		display: block;
+		width: 50%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+		--webkit-transform: skewX(25deg);
+		transform: skewX(25deg);
+	}
+	&:hover {
+		color: $color_hover;
+		border-color: $bg_hover;
+		background-color: $bg_hover;
+	}
+	&:hover:after {
+		left: 60%;
+		-webkit-transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+		transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+		visibility: visible;
+	}
+}
+
+@mixin button_style_2($color, $bg, $color_hover, $bg_hover){
+	color: $color;
+	border-color: $bg;
+	padding: 12px 25px;
+	background-color: $bg;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	&:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: -75%;
+		z-index: 2;
+		display: block;
+		width: 50%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+		--webkit-transform: skewX(25deg);
+		transform: skewX(25deg);
+	}
+	&:hover {
+		color: $color_hover;
+		border-color: $bg_hover;
+		background-color: $bg_hover;
+	}
+	&:hover:after {
+		left: 60%;
+		-webkit-transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+		transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
+		visibility: visible;
+	}
+}

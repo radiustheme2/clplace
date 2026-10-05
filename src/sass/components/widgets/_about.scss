@@ -1,0 +1,42 @@
+/*---------- About ----------*/
+.widget_clplace_about,
+.about-us-widget {
+	padding: 0;
+	.rt-site-logo.dark-logo {
+		display: none;
+	}
+	.description {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	.app-btn-title {
+		color: #E2E2E2;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 28px;
+		font-style: normal;
+		margin-top: 20px;
+		display: block;
+	}
+	.app-download-area {
+		margin-top: 20px;
+		display: inline-flex;
+		a span svg {
+			width: auto;
+			height: auto;
+			display: inline-flex;
+		}
+		a {
+			padding: 10px 20px;
+			border-radius: 5px;
+			margin-right: 15px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background-color: rgb(31, 30, 30);
+			&:hover {
+				background-color: $primary_color;
+			}
+		}
+	}
+}

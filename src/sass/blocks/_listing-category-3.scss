@@ -1,0 +1,22 @@
+/*---------- Listing Category Box 3 ----------*/
+.rt-el-listing-cat-box-3 {
+	.cats-items-wrapper {
+		display: inline-flex;
+		.cat-details {
+			padding: 30px;
+		}
+		.cat-details h3 {
+			margin: 0;
+		}
+	}
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-3 .cat-item-wrap .cat-details {
+	background-color: transparent;
+}
+.rtcl-categories.rtcl-categories-elementor.rt-el-listing-cat-box-3 .cat-item-wrap {
+	padding-bottom: 0;
+	position: relative;
+	h3 {
+		margin: 0;
+	}
+}

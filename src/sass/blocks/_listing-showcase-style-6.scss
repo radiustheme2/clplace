@@ -1,0 +1,340 @@
+/*---------- Listing Showcase 6 ----------*/
+.rtcl-style-6-view {
+	.item-content .rt-categories {
+		margin-bottom: 10px;
+	}
+	.listing-item .item-content {
+		padding: 20px 25px 20px 25px;
+	}
+	.item-content .listing-footer {
+		padding-top: 12px;
+	}
+}
+.rtcl .rtcl-listings .listing-item .item-img {
+	z-index: 0;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	.listing-thumb {
+		width: 100%;
+		a {
+			width: 100%;
+			height: 100%;
+			display: inline-flex;
+		}
+		a img {
+			width: 100%;
+			height: 100%;
+			display: inline-flex;
+		}
+	}
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		opacity: 0.25;
+		z-index: 1;
+		position: absolute;
+		display: inline-flex;
+		background-color: #050608;
+	}
+}
+
+.meta-tags {
+	gap: 5px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	display: flex;
+	list-style: none;
+}
+
+.rtcl-listings .meta-tags {
+	top: 20px;
+	right: 20px;
+	position: absolute;
+}
+.meta-tags li .rtcl-btn,
+.meta-tags li a {
+	width: 32px;
+	height: 32px;
+	color: $white_color;
+	border-radius: 100%;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	transition: all .3s ease-in-out;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.meta-tags li .rtcl-btn i {
+	height: 27px;
+	display: inline-block;
+}
+.meta-tags li .rtcl-btn:hover,
+.meta-tags li a:hover {
+	color: $title_color;
+	border-color: $white_color;
+	background-color: $white_color;
+}
+.meta-tags li a .rtcl-icon {
+	color: #9E9FB2;
+	display: inline-flex;
+	transition: all .3s ease-in-out;
+}
+.meta-tags li a i.icon-pl-eye:before {
+	margin-top: 1px;
+}
+.meta-tags li a i.icon-compare:before {
+	font-size: 14px;
+}
+.meta-tags li a i.icon-pl-eye:before {
+	margin-top: 2px;
+}
+.meta-tags li a:hover .rtcl-icon {
+	color: #fff;
+}
+.meta-tags li a.rtcl-favourites .favourite-label {
+	display: none;
+}
+.meta-tags li a .rtcl-icon:before {
+	width: 18px;
+	content: "\e874";
+	font-weight: normal;
+	font-family: "fontello";
+}
+
+.meta-tags li a .rtcl-icon.rtcl-icon-heart-empty:before {
+	content: "\e874";
+	font-size: 14px;
+}
+.meta-tags li a .rtcl-icon.rtcl-icon-heart:before {
+	content: "\e874";
+	font-size: 14px;
+}
+
+.rtcl .rtcl-listings .listing-item .meta-tags li {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all .3s ease-in-out;
+	visibility: hidden;
+	.rtcl-icon-spinner {
+		top: 0;
+		left: 0;
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		border-radius: 100%;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		background-color: $white_color;
+	}
+}
+
+.rtcl .rtcl-listings .listing-item:hover .meta-tags li {
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible
+}
+
+.rtcl .rtcl-listings .listing-item:hover .meta-tags li:first-child {
+	transition-delay: 0s
+}
+
+.rtcl .rtcl-listings .listing-item:hover .meta-tags li:nth-child(2) {
+	transition-delay: .2s
+}
+
+.rtcl .rtcl-listings .listing-item:hover .meta-tags li:nth-child(3) {
+	transition-delay: .3s
+}
+
+.rtcl.rtcl-elementor-widget .rtcl-grid-view .rtin-el-button a {
+	color: #515689;
+	min-width: auto;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+}
+.rtcl.rtcl-elementor-widget .rtcl-grid-view .rtin-el-button a.rtcl-phone-reveal {
+	color: #ffffff;
+	padding: 3px 10px;
+	border-radius: 4px;
+	background-color: var(--petslist-primary-color);
+}
+.rtcl.rtcl-elementor-widget .rtcl-grid-view .rtin-el-button a.rtcl-phone-reveal:focus,
+.rtcl.rtcl-elementor-widget .rtcl-grid-view .rtin-el-button a.rtcl-phone-reveal:hover {
+	color: #ffffff;
+	background-color: var(--petslist-secondary-color);
+}
+.rtcl.rtcl-elementor-widget .rtcl-listings .listing-item {
+	border: 1px solid #E4E4E4;
+}
+.rtcl.rtcl-elementor-widget .rtcl-listings .listing-item.as-top {
+	border-color: #ffbc3e;
+}
+.rtcl.rtcl-elementor-widget .rtcl-listings .listing-item.is-bump-up {
+	border-color: #b777d4;
+}
+.rtcl.rtcl-elementor-widget .rtcl-listings .listing-item:hover,
+.rtcl .rtcl-listings .listing-item {
+	box-shadow: none;
+}
+.rtcl.rtcl-elementor-widget .rtcl-grid-view .rtin-el-button a:focus,
+.rtcl.rtcl-elementor-widget .rtcl-grid-view .rtin-el-button a:hover {
+	color: #ffffff;
+	background-color: $primary_color;
+}
+.rtcl.rtcl-elementor-widget .rtcl-listings .badge {
+	border-radius: 5px;
+}
+.rtcl.rtcl-elementor-widget .rtcl-listings .listing-item.is-featured .listing-thumb:after {
+	display: none;
+}
+
+/* = Laptop Device = */
+@media screen and (max-width: 1366px) {
+	.rtcl .rtcl-grid-view.laptop-columns-8 {
+		grid-template-columns:repeat(8,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-7 {
+		grid-template-columns:repeat(7,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-6 {
+		grid-template-columns:repeat(6,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-5 {
+		grid-template-columns:repeat(5,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-4 {
+		grid-template-columns:repeat(4,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-3 {
+		grid-template-columns:repeat(3,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-2 {
+		grid-template-columns:repeat(2,1fr)
+	}
+	.rtcl .rtcl-grid-view.laptop-columns-1 {
+		grid-template-columns:repeat(1,1fr)
+	}
+}
+
+/* = Tab Extra Devices = */
+@media screen and (max-width: 1200px) {
+	.rtcl .rtcl-grid-view.tab-extra-columns-8 {
+		grid-template-columns:repeat(8,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-7 {
+		grid-template-columns:repeat(7,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-6 {
+		grid-template-columns:repeat(6,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-5 {
+		grid-template-columns:repeat(5,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-4 {
+		grid-template-columns:repeat(4,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-3 {
+		grid-template-columns:repeat(3,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-2 {
+		grid-template-columns:repeat(2,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-extra-columns-1 {
+		grid-template-columns:repeat(1,1fr)
+	}
+}
+
+/* = Tab Devices = */
+@media screen and (max-width: 1024px) {
+	.rtcl .rtcl-grid-view.tab-columns-8 {
+		grid-template-columns:repeat(8,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-7 {
+		grid-template-columns:repeat(7,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-6 {
+		grid-template-columns:repeat(6,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-5 {
+		grid-template-columns:repeat(5,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-4 {
+		grid-template-columns:repeat(4,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-3 {
+		grid-template-columns:repeat(3,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-2 {
+		grid-template-columns:repeat(2,1fr)
+	}
+	.rtcl .rtcl-grid-view.tab-columns-1 {
+		grid-template-columns:repeat(1,1fr)
+	}
+}
+
+/* = Mobile Extra Devices = */
+@media screen and (max-width: 768px) {
+	.rtcl .rtcl-grid-view.mobile-extra-columns-8 {
+		grid-template-columns:repeat(8,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-7 {
+		grid-template-columns:repeat(7,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-6 {
+		grid-template-columns:repeat(6,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-5 {
+		grid-template-columns:repeat(5,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-4 {
+		grid-template-columns:repeat(4,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-3 {
+		grid-template-columns:repeat(3,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-2 {
+		grid-template-columns:repeat(2,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-extra-columns-1 {
+		grid-template-columns:repeat(1,1fr)
+	}
+}
+
+/* = Mobile Devices = */
+@media screen and (max-width: 575px) {
+	.rtcl .rtcl-grid-view.mobile-columns-8 {
+		grid-template-columns:repeat(8,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-7 {
+		grid-template-columns:repeat(7,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-6 {
+		grid-template-columns:repeat(6,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-5 {
+		grid-template-columns:repeat(5,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-4 {
+		grid-template-columns:repeat(4,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-3 {
+		grid-template-columns:repeat(3,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-2 {
+		grid-template-columns:repeat(2,1fr)
+	}
+	.rtcl .rtcl-grid-view.mobile-columns-1 {
+		grid-template-columns:repeat(1,1fr)
+	}
+}
+

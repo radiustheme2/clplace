@@ -1,0 +1,27 @@
+/* = RT Social Icon = */
+.rt-social-icon {
+	display: inline-flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	.rt-social-item {
+		display: inline-flex;
+		align-items: center;
+		gap: 15px;
+		flex-wrap: wrap;
+		a {
+			font-size: 14px;
+			color: $meta_color;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.4s ease-in-out;
+			overflow: hidden;
+			&:hover {
+				i {
+					animation: toBottomFromTop 0.7s forwards;
+				}
+			}
+		}
+	}
+}

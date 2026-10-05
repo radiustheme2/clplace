@@ -1,0 +1,109 @@
+/*---------- Contact ----------*/
+.contact-info-widget ul li {
+	gap: 10px;
+	display: inline-flex;
+	align-items: center;
+	@include transition_default();
+	i {
+		font-size: 20px;
+		color: #8A8989;
+		@include transition_default();
+	}
+	&:hover {
+		color: $white_color;
+		i, a {
+			color: $white_color;
+		}
+	}
+	&.newsletter-form-1 {
+		flex-flow: column;
+		align-items: flex-start;
+		h4 {
+			color: #E2E2E2;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+	.shortcode-wrap {
+		width: 100%;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+ul.elementor-icon-list-items {
+	list-style: none;
+}
+
+.ff-default .ff-el-form-control:focus {
+	border-color: $primary_color !important;
+}
+
+.newsletter-form-1 .fluentform {
+	position: relative;
+}
+
+.newsletter-form-1 .fluentform .ff-el-group {
+	margin: 0
+}
+
+.newsletter-form-1 .fluentform .ff-el-group .ff-el-form-control {
+	height: 50px;
+	font-size: 16px;
+	line-height: 28px;
+	color: $white_color;
+	background: 0 0;
+	padding: 0 0 0 25px;
+	border: 1px solid #3E3E41;
+	border-radius: 5px!important
+}
+.newsletter-form-1 .fluentform .ff-el-group .ff-el-form-control:focus {
+	box-shadow: none;
+	border-color: $white_color;
+	outline-color: $white_color;
+}
+
+.newsletter-form-1 .fluentform .ff-el-group .ff_submit_btn_wrapper {
+	margin: 0
+}
+
+.newsletter-form-1 .fluentform .ff-el-group .ff-btn-submit {
+	border: 0;
+	padding: 0;
+	z-index: 5;
+	height: 40px;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+	border-radius: 5px!important;
+	background-color: $primary_color;
+	transition: all .3s ease-in-out
+}
+
+.newsletter-form-1 .fluentform .ff-el-group .ff-btn-submit img {
+	transition: all .4s ease-in-out
+}
+
+.newsletter-form-1 .fluentform .ff-el-group .ff-btn-submit:hover img {
+	animation: headShake 1.5s;
+}
+
+.newsletter-form-1 .elementor-widget-html .label {
+	font-size: 15px;
+	color: #888787;
+	font-weight: 400;
+}
+
+.newsletter-form-1 .ff-btn-submit {
+	top: 5px;
+	right: 5px;
+	z-index: 5;
+	width: 45px;
+	position: absolute;
+}
+
+.newsletter-form-1 .fluentform .ff-el-group .ff-el-form-control::placeholder {
+	color: #8A8989;
+}

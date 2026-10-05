@@ -1,0 +1,83 @@
+/*---------- Spacing ----------*/
+
+@each $space in $allSpacing {
+	.p-#{$space} {
+		padding: #{$space}px;
+	}
+	.m-#{$space} {
+		margin: #{$space}px;
+	}
+}
+
+
+@each $pd, $padding in $paddings {
+
+	@each $space in $allSpacing {
+		.#{$pd}-#{$space} {
+			#{$padding}: #{$space}px;
+		}
+	}
+
+	@media (min-width: #{$lg}) {
+		@each $space in $mediaSpacing {
+			.#{$pd}-lg-#{$space} {
+				#{$padding}: #{$space}px;
+			}
+		}
+	}
+
+	@media (min-width: #{$md}) {
+		@each $space in $mediaSpacing {
+			.#{$pd}-md-#{$space} {
+				#{$padding}: #{$space}px;
+			}
+		}
+	}
+	@media (min-width: #{$sm}) {
+		@each $space in $mediaSpacing {
+			.#{$pd}-sm-#{$space} {
+				#{$padding}: #{$space}px;
+			}
+		}
+	}
+}
+
+@each $mg, $margin in $margins {
+
+	@each $space in $allSpacing {
+		.#{$mg}-#{$space} {
+			#{$margin}: #{$space}px;
+		}
+	}
+
+	@media (max-width: #{$lg}) {
+		@each $space in $mediaSpacing {
+			.#{$mg}-lg-#{$space} {
+				#{$margin}: #{$space}px;
+			}
+		}
+	}
+
+	@media (max-width: #{$md}) {
+		@each $space in $mediaSpacing {
+			.#{$mg}-md-#{$space} {
+				#{$margin}: #{$space}px;
+			}
+		}
+	}
+
+	@media (max-width: #{$sm}) {
+		@each $space in $mediaSpacing {
+			.#{$mg}-sm-#{$space} {
+				#{$margin}: #{$space}px;
+			}
+		}
+	}
+}
+
+@each $space in $allSpacing {
+	.gap-#{$space} {
+		gap: #{$space}px;
+	}
+}
+

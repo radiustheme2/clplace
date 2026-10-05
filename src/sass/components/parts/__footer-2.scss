@@ -1,0 +1,60 @@
+/*---------- Footer Style 2 ----------*/
+.clplace-footer-2 .site-footer {
+	.clplace-navigation ul > li:hover > ul {
+		z-index: 9999;
+	}
+
+	&.schema-default {
+		background-color: $title_color;
+	}
+
+	.clplace-footer-menu {
+		text-align: center;
+
+		@media (min-width: 1200px) {
+			margin: 0 -15px;
+		}
+
+		> li > a {
+			font-size: 18px;
+			color: $gray40;
+			padding: 8px 16px;
+
+			&:hover {
+				color: $white_color;
+			}
+
+			svg {
+				fill: $gray40;
+			}
+		}
+	}
+
+	.footer-menu-wrapper {
+		padding: 30px 0;
+		border-top: none;
+		border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+		@media (min-width: 1200px) {
+			padding: 32px 0;
+		}
+
+		.align-default {
+			justify-content: end;
+		}
+	}
+
+	.footer-copyright-logo {
+		padding-top: 7px;
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+
+		img {
+			max-width: 300px;
+			max-height: 100px;
+			transform: scale(.84);
+			object-fit: contain;
+		}
+	}
+}

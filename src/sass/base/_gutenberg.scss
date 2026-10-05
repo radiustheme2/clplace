@@ -1,0 +1,145 @@
+/*---------- Gutenberg ----------*/
+.wp-block-page-list {
+	margin: 0;
+	padding-left: 15px;
+}
+
+ul.wp-block-social-links {
+	gap: 15px;
+	width: 100%;
+	flex-flow: unset !important;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.wp-block-search {
+	.wp-block-search__inside-wrapper {
+		border-radius: 5px;
+	}
+	.wp-block-search__label {
+		width: 100%;
+		font-size: 24px;
+		line-height: 1.2;
+		margin-bottom: 25px;
+		color: $title_color;
+		display: inline-flex;
+	}
+	.wp-block-search__input {
+		width: 100%;
+		height: 60px;
+		padding: 0 15px;
+		border-radius: 5px;
+		border: 1px solid #f1f1f1;
+		background-color: transparent;
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+	}
+}
+
+form.wp-block-search__button-outside,
+form.wp-block-search__button-inside,
+form.wp-block-search__no-button {
+	margin-bottom: 25px;
+}
+
+.wp-block-cover {
+	padding: 30px;
+	margin-top: 15px;
+}
+
+.wp-block-file {
+	margin-top: 15px;
+}
+
+.wp-block-media-text {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.wp-block-image {
+	width: 100%;
+	display: inline-block;
+}
+
+.wp-block-button {
+	margin-bottom: 15px;
+}
+
+:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) {
+	border-color: #f1f1f1;
+}
+
+.wp-block-post-excerpt__excerpt {
+	margin-bottom: 30px;
+}
+
+.wp-block-button__link {
+	border-radius: 5px;
+	background-color: $primary_color;
+	&:hover {
+		color: $white_color;
+	}
+}
+
+:where(.wp-block-group.has-background) {
+	margin-bottom: 10px;
+}
+
+.has-large-font-size {
+	line-height: 1.2;
+}
+
+.wp-caption {
+	margin: 0 0 1.5em;
+	max-width: 100%;
+}
+.wp-block-image.alignfull img,
+.wp-block-image.alignwide img {
+	height: auto;
+	width: 100%;
+}
+
+form.post-password-form label > input {
+	padding: 10px 8px;
+	border-radius: 4px;
+	border: 1px solid #dfdfdf;
+}
+
+/* = Color Settings = */
+.has-clplace-primary-color {
+	color: #2d68ff !important;
+}
+.has-clplace-white-color {
+	color: #ffffff !important;
+}
+.has-clplace-black-color {
+	color: #111111 !important;
+}
+.has-clplace-gold-color {
+	color: #FCBB6D !important;
+}
+.has-clplace-pink-color {
+	color: #f80a0a !important;
+}
+.has-clplace-grey-color {
+	color: #b8c2cc !important;
+}
+
+/* = Background Color Settings = */
+.has-clplace-primary-background-color {
+	background-color: #2d68ff !important;
+}
+.has-clplace-white-background-color {
+	background-color: #ffffff !important;
+}
+.has-clplace-black-background-color {
+	background-color: #111111 !important;
+}
+.has-clplace-gold-background-color {
+	background-color: #FCBB6D !important;
+}
+.has-clplace-pink-background-color {
+	background-color: #f80a0a !important;
+}
+.has-clplace-grey-background-color {
+	background-color: #b8c2cc !important;
+}

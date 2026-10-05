@@ -1,0 +1,215 @@
+/*---------- Post Meta ----------*/
+
+.clplace-post-meta {
+	color: $meta_color;
+	font-size: $base_fs - 1;
+	margin-top: 10px;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 2px;
+		column-gap: 15px;
+		align-items: flex-start;
+	}
+
+	ul li {
+		gap: 5px;
+		position: relative;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 1.5;
+		i {
+			color: $primary_color;
+		}
+		.prefix {
+			margin-right: 4px;
+		}
+
+		&.edit-link {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	article:hover & ul li.edit-link {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	ul li a {
+		color: $meta_color;
+		padding-bottom: 0;
+
+		&:hover {
+			color: $primary_color;
+		}
+	}
+
+	//Default meta style
+	.meta-style-default & {
+		font-size: 15px;
+
+		ul {
+			column-gap: 10px;
+			display: block;
+		}
+		ul li {
+			display: inline;
+			text-transform: capitalize;
+		}
+		ul li i {
+			margin-right: 5px;
+			color: $primary_color;
+		}
+
+		ul li:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+	.meta-style-border & {
+		ul {
+			gap: 5px;
+		}
+
+		ul li:not(.category, .tag) {
+			border: 1px solid $primary_color;
+			padding: 0 10px;
+			@extend .primaryColor;
+
+			a {
+				@extend .primaryColor;
+
+				&:hover {
+					@extend .secondaryColor;
+				}
+			}
+		}
+
+		ul li:is(.category, .tag) {
+			padding: 0;
+
+			.tag-links,
+			.category-links {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 5px;
+			}
+
+			.sp {
+				display: none;
+			}
+
+			a {
+				display: inline-block;
+				height: 100%;
+				border: 1px solid $primary_color;
+				padding: 4px 10px;
+				line-height: 1.2;
+				@extend .primaryColor;
+
+				&:hover {
+					@extend .primaryBG;
+					@extend .whiteColor;
+				}
+			}
+		}
+	}
+
+	.meta-style-pipe & {
+		li:not(:last-child)::after {
+			content: " | ";
+			transform: scaleY(.9);
+			margin: 0 1px 0 5px;
+		}
+	}
+
+	//Dashed meta style
+	.meta-style-dash & li::before {
+		@extend .metaStyleDash;
+	}
+
+	//Dash and BG Style
+	.meta-style-dash-bg & {
+		ul {
+			gap: 6px;
+		}
+
+		li {
+			padding: 0;
+		}
+
+		li::before {
+			@extend .metaStyleDash;
+		}
+
+		.tag-links,
+		.category-links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+
+		li:not(.category, .tag) {
+			background: $meta_light;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding: 3px 10px;
+			margin: 0;
+			@include transition_default();
+			@extend .primaryColor;
+
+			&:before {
+				@extend .primaryColor;
+			}
+
+			a {
+				@extend .primaryColor;
+			}
+
+			a:hover {
+				color: $title_color;
+			}
+		}
+
+		li:is(.category, .tag) {
+			.sp {
+				display: none;
+			}
+
+			a {
+				display: inline-block;
+				height: 100%;
+				padding: 5.5px 10px;
+				line-height: 1.2;
+				position: relative;
+				background-color: $meta_light;
+				@extend .primaryColor;
+
+				&:hover {
+					@extend .primaryBG;
+					@extend .whiteColor;
+				}
+
+				&::before {
+					@extend .metaStyleDash;
+				}
+			}
+
+			&::before {
+				content: none;
+			}
+		}
+
+	}
+}
+
+.widget .clplace-post-meta {
+	margin-top: 0;
+	margin-bottom: 6px;
+}

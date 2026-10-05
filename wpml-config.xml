@@ -1,0 +1,19 @@
+<wpml-config>
+  <admin-texts>
+    <key name="clplace">
+      <key name="rt_phone" />
+      <key name="rt_contact_address" />
+      <key name="rt_error_heading" />
+      <key name="rt_error_text" />
+      <key name="rt_error_button_text" />
+      <key name="rt_header_labels" />
+      <key name="rt_login_signup_label" />
+      <key name="rt_get_started_label" />
+      <key name="rt_follow_us_label" />
+      <key name="rt_blog_labels" />
+      <key name="rt_author_prefix" />
+      <key name="rt_tags" />
+      <key name="rt_share" />
+    </key>
+  </admin-texts>
+</wpml-config>

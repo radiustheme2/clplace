@@ -1,0 +1,15 @@
+[class*='rticon'] {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+[class*='rticon'] svg {
+	fill: $meta_color;
+	width: 18px;
+	height: 18px;
+}
+
+[class*='rticon'] svg {
+	@include transition_default();
+}

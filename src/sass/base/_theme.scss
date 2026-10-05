@@ -1,0 +1,40 @@
+/*---------- Theme ----------*/
+
+.has-banner .site-content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.listing-archive-template-content-wrapper,
+.archive-template-content-wrapper,
+.page-template-content-wrapper,
+.single-post-container {
+	padding-top: 120px;
+	padding-bottom: 90px;
+}
+
+.post-edit-link {
+	top: 0;
+	left: 0;
+	opacity: 0;
+	font-size: 13px;
+	line-height: 1;
+	max-width: 44px;
+	max-height: 24px;
+	padding: 5px 10px;
+	position: absolute;
+	visibility: hidden;
+	align-items: center;
+	justify-content: center;
+	display: flex !important;
+	background: rgba(0, 0, 0, 0.5);
+	color: $white_color !important;
+
+	&:hover {
+		background: $black_color;
+	}
+
+	.post-thumbnail:hover & {
+		opacity: 1;
+		visibility: visible;
+	}
+}

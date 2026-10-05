@@ -1,0 +1,59 @@
+/*---------- Footer Widget wrapper ----------*/
+.footer-widgets-wrapper {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	font-size: 15px;
+
+	//Default widgets overwrite
+	.footer-widgets {
+		gap: 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+
+		.widget-title {
+			color: #E2E2E2;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+
+		> .widget {
+			padding: 15px;
+			flex-grow: 25;
+		}
+
+		ul {
+			padding-left: 0;
+			list-style: none;
+			ul {
+				padding-left: 20px;
+			}
+		}
+	}
+	.widget ul {
+		gap: 15px;
+	}
+	.widget.widget_nav_menu ul li a {
+		position: relative;
+		padding-left: 10px;
+		&:before {
+			top: 50%;
+			left: 0;
+			width: 4px;
+			height: 4px;
+			content: '';
+			margin-top: -2px;
+			position: absolute;
+			border-radius: 10px;
+			background-color: #717171;
+			@include transition_default();
+		}
+		&:hover {
+			color: $white_color;
+			&:before {
+				background-color: $white_color;
+			}
+		}
+	}
+}

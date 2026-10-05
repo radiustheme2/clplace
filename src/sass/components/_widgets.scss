@@ -1,0 +1,448 @@
+/*---------- Widgets ----------*/
+
+$widget_li_space: 12px;
+.widget {
+	@include font_size(15px);
+	font-size: 16px;
+	margin: 0 0 30px;
+	color: $body_color;
+	padding: 35px 40px;
+}
+
+.widget a {
+	color: $body_color;
+}
+
+.widget a:hover {
+	@extend .primaryColor;
+}
+
+.widget {
+	ul, ol {
+		padding-left: 0;
+		list-style: none;
+		ul, ol {
+			padding-left: 20px;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.widget {
+		margin: 0 0 30px;
+	}
+}
+
+.wp-block-heading {
+	width: 100%;
+	line-height: 1.2;
+	margin-bottom: 12px;
+	color: var(--rt-title-color);
+	display: inline-flex;
+	font-weight: 600;
+}
+
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+	padding: 0 5px;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+@media (max-width: 992px) {
+
+	.gallery-columns-3 .gallery-item,
+	.gallery-columns-4 .gallery-item {
+		max-width: 45.1%;
+	}
+
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		max-width: 22%;
+	}
+}
+
+@media (max-width: 550px) {
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		max-width: 45.1%;
+	}
+}
+
+
+/*------------------------------------------------------------
+  Sidebar Widget
+--------------------------------------------------------------*/
+
+/*---------- List ----------*/
+.widget ul {
+	display: flex;
+	flex-flow: column;
+	gap: $widget_li_space;
+}
+
+.widget ul li {
+	//padding-bottom: $widget_li_space;
+}
+
+.widget ul li ul li:last-child {
+	//padding-bottom: 0;
+}
+
+.widget ul li ul li:first-child {
+	padding-top: calc($widget_li_space / 2);
+}
+
+.widget ul li a {
+	line-height: 1;
+}
+
+.widget_block .wp-block-group__inner-container > ul,
+.widget > ul {
+	margin-top: 0;
+}
+
+.widget_block .wp-block-group__inner-container > ul > li:last-child a,
+.widget > ul > li:last-child a,
+.widget .menu-testing-menu-container > ul > li:last-child a {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.widget_block .wp-block-latest-comments .wp-block-latest-comments__comment {
+	line-height: 1.9;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+	margin-bottom: 0;
+}
+
+ol.wp-block-latest-comments {
+	margin-left: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+ol.wp-block-latest-comments li:last-child {
+	margin-bottom: 0;
+}
+
+/*---------- Recent Comments ----------*/
+.widget_recent_comments ul li a {
+	border-bottom: none;
+	padding: 0;
+}
+
+.widget_recent_comments ul li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+/*---------- RSS ----------*/
+.widget_rss {
+	.widget-title {
+		img {
+			margin-top: -3px;
+		}
+		a {
+			color: $title_color;
+		}
+	}
+	ul {
+		li {
+			.rsswidget {
+				display: block;
+				margin-bottom: 8px;
+				font-weight: 600;
+				line-height: 1.4;
+			}
+			&:last-child {
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+/*---------- Text Widget ----------*/
+.widget_text {
+	.widget-heading {
+		margin-bottom: 15px;
+	}
+	select {
+		margin-top: 0;
+	}
+}
+
+/*---------- Tag Cloud ----------*/
+.wp-block-tag-cloud,
+.tagcloud {
+	gap: 10px;
+	margin: 0;
+	flex-wrap: wrap;
+	display: inline-flex;
+}
+.widget_tag_cloud .tagcloud a,
+.wp-block-tag-cloud a,
+.blog-tags a,
+.tagcloud a {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.widget_tag_cloud .tagcloud a,
+.wp-block-tag-cloud a,
+.blog-tags a,
+.tagcloud a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.5;
+	color: $body_color;
+	border-radius: 5px;
+	padding: 6px 12px;
+	background-color: $meta_light;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	border: 1px solid $meta_light;
+	text-align: center;
+	text-transform: lowercase;
+	font-weight: 500;
+	font-size: 15px !important;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.widget_tag_cloud .tagcloud a:hover,
+.wp-block-tag-cloud a:hover,
+.widget_tag_cloud .tagcloud a:hover,
+.blog-tags a:hover,
+.tagcloud a:hover {
+	@extend .primaryBG;
+	color: $white_color;
+	border-color: $primary_color;
+}
+
+/*---------- Select ----------*/
+.wp-block-categories-dropdown,
+.wp-block-archives-dropdown,
+.widget {
+	select {
+		width: 100%;
+		outline: none;
+		max-width: 100%;
+		background-color: transparent;
+		border: 1px solid #f1f1f1;
+		border-radius: 6px;
+		padding: 16px 13px;
+		appearance: none;
+		background-size: 10px;
+		background-image: url(../images/select-arrow.svg) !important;
+		background-repeat: no-repeat;
+		background-position: 96%;
+		transition: all ease 0.31s;
+	}
+}
+.listing-map-wrapper {
+	.listing-map-search {
+		padding: 0 30px 0 10px;
+	}
+	.listing-map-archive-sidebar {
+		select {
+			background-image: unset !important;
+		}
+		.ws-category .rtcl-terms:before,
+		.ws-location .rtcl-terms:before {
+			display: none;
+		}
+		.ws-category .rtcl-search-type:after,
+		.ws-location .rtcl-search-type:after,
+		.ws-type .rtcl-search-type:after,
+		.ws-category .rtcl-terms:after,
+		.ws-location .rtcl-terms:after,
+		.ws-type .rtcl-terms:after {
+			top: 0;
+			height: 100%;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+footer {
+
+	.widget {
+		select {
+			color: $body_color;
+			border: 1px solid #a3a3a3;
+			option {
+				color: $body_color;
+			}
+		}
+	}
+
+	.widget_rss .widget-title a {
+		color: #E2E2E2;
+	}
+
+	.widget_tag_cloud .tagcloud a,
+	.wp-block-tag-cloud a,
+	.blog-tags a,
+	.tagcloud a {
+		color: #f2f2f2;
+		background-color: transparent;
+	}
+
+	.clplace-search-form .search-box input {
+		color: #f2f2f2;
+		border: 1px solid #ececec;
+	}
+
+}
+
+/*---------- Calender ----------*/
+.wp-calendar-table caption {
+	caption-side: top;
+	padding-top: 0;
+	padding-bottom: 15px;
+	line-height: 1;
+	text-align: center;
+}
+
+.widget .calendar_wrap {
+	margin-top: 0;
+}
+
+.widget .wp-calendar-table td,
+.widget .wp-calendar-table td {
+	padding: 0;
+	text-align: center;
+	line-height: 32px;
+}
+
+.widget .wp-calendar-table td a {
+	font-weight: 600;
+}
+
+.widget .wp-calendar-table td#today a,
+.widget .wp-calendar-table td#today {
+	color: #fff;
+	background-color: var(--rt-primary-color);
+}
+
+.wp-calendar-nav-next {
+	float: right;
+}
+
+
+/*---------- Text Widget ----------*/
+.widget_text {
+	select {
+		margin-top: 0;
+	}
+	strong {
+		margin-bottom: 5px;
+		display: inline-block;
+	}
+}
+
+/*---------- Calender ----------*/
+.wp-calendar-table caption {
+	caption-side: top;
+	padding-top: 0;
+	padding-bottom: 15px;
+	line-height: 1;
+	text-align: center;
+}
+
+.widget .calendar_wrap {
+	margin-top: 0;
+}
+
+.widget .wp-calendar-table td,
+.widget .wp-calendar-table td {
+	padding: 0;
+	text-align: center;
+	line-height: 32px;
+}
+
+.widget .wp-calendar-table td a {
+	font-weight: 600;
+}
+
+.widget .wp-calendar-table td#today a,
+.widget .wp-calendar-table td#today {
+	color: $white_color;
+	@extend .primaryBG;
+}
+
+.wp-calendar-nav-next {
+	float: right;
+}
+
+/*---------- Search ----------*/
+.widget_search {
+	.clplace-search-form {
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+		border: 1px solid #ececec;
+	}
+}
+
+/* Custom Widgets
+***************************/
+
+@import "widgets/categories";
+@import "widgets/recent-posts";
+@import "widgets/about";
+@import "widgets/contact";
+@import "widgets/listing-filter";
+@import "widgets/advanced-search";
