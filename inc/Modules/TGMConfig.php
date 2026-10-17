@@ -61,9 +61,9 @@ class TGMConfig {
 			[
 				'name'     => 'Clplace Core',
 				'slug'     => 'clplace-core',
-				'source'   => 'clplace-core.1.2.0.zip',
+				'source'   => 'clplace-core.zip',
 				'required' => true,
-				'version'  => '1.2.0'
+				'version'  => '1.2.1'
 			],
 			[
 				'name'     => 'RT Framework',
@@ -77,21 +77,21 @@ class TGMConfig {
 				'slug'         => 'classified-listing-pro',
 				'source'       => 'classified-listing-pro.4.2.5.zip',
 				'required'     =>  true,
-				'version'      => '4.2.5'
+				'version'      => '4.3.0'
 			],
 			[
 				'name'         => 'Classified Listing Store',
 				'slug'         => 'classified-listing-store',
 				'source'       => 'classified-listing-store.3.2.1.zip',
 				'required'     =>  false,
-				'version'      => '3.2.1'
+				'version'      => '3.2.3'
 			],
 			[
 				'name'         => 'Review Schema Pro',
 				'slug'         => 'review-schema-pro',
 				'source'       => 'review-schema-pro.2.0.1.zip',
 				'required'     =>  false,
-				'version'      => '2.0.1'
+				'version'      => '2.1.2'
 			],
 		];
 

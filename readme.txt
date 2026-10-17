@@ -1,7 +1,14 @@
-=== Listygo === 
+=== Clplace ===
 Contributors: RadiusTheme
 @since   1.0
-Version: 1.2.3
+Version: 1.2.1
+
 ChangeLog:
 
-We developed this theme for any kind of listing directory website. Before install this theme please read the documentation file carefully. If you have any questions or any queries or any problem please contact us throw by email address. Thank you for purchase Listygo WordPress Theme.
+= 1.2.1 ( Oct 17, 2026 ) =
+Fixed: Category slider view count badge invisible on hover
+Fixed: Dropdown arrow misaligned on listing form select fields
+Fixed: Extra border and padding on checkbox custom fields in single listing
+Updated: Listing contact info now shows new location, email and website icons
+Updated: Redesigned sidebar Ajax filter widget with cleaner spacing and toggle icons
+Updated: Classified Listing, Store, Toolkits, Radius Booking, Review Schema and Core plugins updated
