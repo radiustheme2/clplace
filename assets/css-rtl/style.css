@@ -14369,6 +14369,10 @@ xpush
 }
 .form-section-box .rtcl-cfp-item.rtcl-cfp-checkbox {
   display: block;
+  padding: 0;
+}
+.form-section-box .rtcl-cfp-item.rtcl-cfp-checkbox, .form-section-box .rtcl-cfp-item.rtcl-cfp-checkbox:last-child {
+  border-bottom: 0;
 }
 .form-section-box .rtcl-cfp-item.rtcl-cfp-checkbox .rtcl-cfp-vi {
   gap: 10px;
